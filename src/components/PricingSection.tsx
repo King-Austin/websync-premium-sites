@@ -40,7 +40,7 @@ export const PricingSection = () => {
             <div className="text-center mb-8">
               <h3 className="text-3xl font-bold mb-2">Websync</h3>
               <div className="flex items-baseline justify-center gap-2">
-                <span className="text-5xl font-bold text-primary">₦6,999</span>
+                <span className="text-5xl font-bold text-primary">₦5,999</span>
                 <span className="text-muted-foreground">/ month</span>
               </div>
             </div>
@@ -54,9 +54,9 @@ export const PricingSection = () => {
               ))}
             </ul>
 
-            <Button 
-              variant="hero" 
-              size="lg" 
+            <Button
+              variant="hero"
+              size="lg"
               className="w-full text-lg py-6"
               onClick={scrollToForm}
             >

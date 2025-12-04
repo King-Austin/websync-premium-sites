@@ -16,7 +16,7 @@ export const VSLSection = () => {
             🎬 See How Websync Transforms Your Business Online
           </h2>
           <p className={`text-lg text-muted-foreground max-w-3xl mx-auto ${isVisible ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
-            Watch this short video to learn how you can get a premium website for just ₦6,999/month — 
+            Watch this short video to learn how you can get a premium website for just ₦5,999/month —
             no hidden fees, no stress, just results.
           </p>
         </div>

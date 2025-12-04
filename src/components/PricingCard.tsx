@@ -16,24 +16,24 @@ const PricingCard = () => {
           Best Value
         </div>
       </div>
-      
+
       <div className="text-center mb-8 pt-4">
         <div className="text-5xl font-bold text-foreground tracking-tight">
           ₦5,999
         </div>
         <div className="text-muted-foreground mt-1">per month</div>
         <div className="inline-flex items-center gap-2 mt-3 text-sm">
-          <span className="text-muted-foreground line-through">₦6,999</span>
+          <span className="text-muted-foreground line-through">₦5,999</span>
           <span className="bg-destructive/10 text-destructive text-xs font-medium px-2 py-0.5 rounded">
             Save ₦1,000
           </span>
         </div>
       </div>
-      
+
       <div className="space-y-4">
         {features.map((feature, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="flex items-center gap-4 p-3 rounded-xl bg-secondary/50 transition-colors hover:bg-secondary"
           >
             <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">

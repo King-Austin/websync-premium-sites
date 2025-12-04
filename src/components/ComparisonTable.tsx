@@ -8,7 +8,7 @@ const comparisonData = [
     feature: "Initial Cost",
     icon: Zap,
     traditional: "₦300,000 - ₦500,000 upfront",
-    websync: "Just ₦6,999/month",
+    websync: "Just ₦5,999/month",
     highlight: "Save 98% upfront",
   },
   {
@@ -73,7 +73,7 @@ export const ComparisonTable = () => {
     <section id="comparison" className="py-24 px-4 bg-secondary/30 scroll-mt-20">
       <div className="max-w-6xl mx-auto" ref={ref}>
         <h2 className={`text-4xl md:text-5xl font-bold text-center mb-4 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
-          ₦300,000 Websites vs Websync ₦6,999
+          ₦300,000 Websites vs Websync ₦5,999
         </h2>
         <p className={`text-center text-muted-foreground mb-12 text-xl ${isVisible ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
           The Difference is Clear.
@@ -105,9 +105,8 @@ export const ComparisonTable = () => {
             return (
               <div
                 key={index}
-                className={`grid grid-cols-1 md:grid-cols-[200px_1fr_1fr] ${
-                  index !== comparisonData.length - 1 ? "border-b border-border" : ""
-                } hover:bg-accent/5 transition-colors`}
+                className={`grid grid-cols-1 md:grid-cols-[200px_1fr_1fr] ${index !== comparisonData.length - 1 ? "border-b border-border" : ""
+                  } hover:bg-accent/5 transition-colors`}
               >
                 <div className="p-4 md:p-6 border-b md:border-b-0 md:border-r border-border bg-muted/30">
                   <div className="flex items-center gap-3">
@@ -152,7 +151,7 @@ export const ComparisonTable = () => {
 
         <div className="text-center">
           <Button variant="hero" size="lg" onClick={scrollToForm}>
-            Get Your Premium Site for ₦6,999 Today
+            Get Your Premium Site for ₦5,999 Today
           </Button>
         </div>
       </div>

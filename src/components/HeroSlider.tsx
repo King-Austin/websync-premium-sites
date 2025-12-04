@@ -65,9 +65,8 @@ export const HeroSlider = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-700 ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-700 ${index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
         >
           <div className="relative w-full h-full overflow-hidden">
             <img
@@ -87,17 +86,17 @@ export const HeroSlider = () => {
             Premium Websites. One Small Monthly Fee.
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/95 mb-8 max-w-3xl mx-auto animate-fade-in">
-            Get a luxury-level website for just ₦6,999/month. Built and managed by our Vibe Coders team. 
+            Get a luxury-level website for just ₦5,999/month. Built and managed by our Vibe Coders team.
             You own your domain — we handle everything else.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
-            <Button 
-              variant="hero" 
-              size="lg" 
+            <Button
+              variant="hero"
+              size="lg"
               className="text-lg px-12 py-6 h-auto animate-fade-in"
               onClick={scrollToForm}
             >
-              Get Started for ₦6,999/month
+              Get Started for ₦5,999/month
             </Button>
             <Button
               size="lg"
@@ -136,11 +135,10 @@ export const HeroSlider = () => {
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide 
-                ? "bg-primary-foreground w-12" 
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
+                ? "bg-primary-foreground w-12"
                 : "bg-primary-foreground/50 hover:bg-primary-foreground/75"
-            }`}
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
