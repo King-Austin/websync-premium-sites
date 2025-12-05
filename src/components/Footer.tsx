@@ -106,17 +106,17 @@ export const Footer = () => {
                 className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors group"
               >
                 <Mail className="w-5 h-5 flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
-                <span>hello@websync.com</span>
+                <span>websyncwebsite@gmail.com</span>
               </a>
               <a
-                href="tel:+2341234567890"
+                href="tel:+2347043576814"
                 className="flex items-start gap-3 text-muted-foreground hover:text-primary transition-colors group"
               >
                 <Phone className="w-5 h-5 flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
-                <span>+234 123 456 7890</span>
+                <span>+2347043576814</span>
               </a>
               <a
-                href="https://wa.me/2341234567890"
+                href="https://wa.me/2347043576814"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-start gap-3 text-primary hover:text-primary-hover transition-colors font-medium group"
