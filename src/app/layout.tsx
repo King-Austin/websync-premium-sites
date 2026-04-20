@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Providers } from "@/components/providers";
 import SchemaOrg from "@/components/SchemaOrg";
+import { Analytics } from "@vercel/analytics/next";
 import { Preloader } from "@/components/Preloader";
 import "../index.css";
+
 
 export const metadata: Metadata = {
   title: "websyncdigital | Best Web Design Agency in Nigeria | ₦9,999/Month",
@@ -112,6 +114,8 @@ export default function RootLayout({
           <span itemProp="telephone">+2349111719701</span>
         </span>
         <Providers>{children}</Providers>
+        <Analytics />
+
       </body>
     </html>
   );
