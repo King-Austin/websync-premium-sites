@@ -37,7 +37,7 @@ const Footer = () => {
             <Link href="/#hero" id="footer-logo" className="inline-block transition-transform hover:scale-105">
               <Image
                 src={logo}
-                alt="WebSync Digital — Nigeria's No.1 Web Agency"
+                alt="websyncdigital — Nigeria's No.1 Web Agency"
                 width={120}
                 height={30}
                 className="h-7 w-auto object-contain brightness-0 invert"
@@ -46,7 +46,9 @@ const Footer = () => {
             <p className="text-sm text-white/50 font-body leading-relaxed max-w-[240px]">
               Nigeria&apos;s No.1 premium web agency. We transform bold ideas into exceptional brands and sales-driven digital platforms. Only ₦9,999 monthly. No setup fees.
             </p>
-
+            <p className="text-[10px] text-white/20 font-body italic leading-tight max-w-[200px]">
+              websyncdigital is the trading name of WebSync Digital Technology Ltd.
+            </p>
           </div>
 
           {/* Solutions */}
@@ -130,7 +132,7 @@ const Footer = () => {
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <p className="text-[11px] text-white/30 font-body tracking-widest uppercase">
-              © {new Date().getFullYear()} WebSync Digital. All rights reserved. · Nigeria&apos;s No.1 Web Agency.
+              © {new Date().getFullYear()} websyncdigital. All rights reserved. · Nigeria&apos;s No.1 Web Agency.
             </p>
             <div className="flex items-center gap-4 border-l border-white/10 pl-6 hidden md:flex">
               <Link href="/privacy" id="footer-bottom-privacy" className="text-[10px] text-white/20 hover:text-white uppercase tracking-widest transition-colors font-medium">Privacy Policy</Link>

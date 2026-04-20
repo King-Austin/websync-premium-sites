@@ -49,7 +49,7 @@ const Navbar = () => {
           >
             <Image
               src={logo}
-              alt="WebSync Digital — Nigeria's #1 Web Agency"
+              alt="websyncdigital — Nigeria's No.1 Web Agency"
               width={130}
               height={32}
               className={`h-8 w-auto object-contain transition-all duration-300 ${
@@ -129,7 +129,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: navLinks.length * 0.07 + 0.1 }}
                 id="mobile-nav-whatsapp-cta"
-                href="https://wa.me/2349111719701?text=Hi%20WebSync%20Digital%2C%20I%20want%20to%20get%20started."
+                href="https://wa.me/2349111719701?text=Hi%20websyncdigital%2C%20I%20want%20to%20get%20started."
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}

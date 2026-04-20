@@ -8,8 +8,9 @@ const SchemaOrg = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://www.websyncdigital.com.ng/#organization",
-    "name": "WebSync Digital",
-    "alternateName": ["WebSync Nigeria", "WebSync Digital Agency"],
+    "name": "websyncdigital",
+    "legalName": "WebSync Digital Technology Ltd",
+    "alternateName": ["WebSync Digital Technology Ltd", "WebSync Nigeria", "WebSync Digital Agency"],
     "url": "https://www.websyncdigital.com.ng",
     "taxID": "9470161",
     "logo": {
@@ -49,7 +50,7 @@ const SchemaOrg = () => {
       "https://instagram.com/websyncdigital",
       "https://linkedin.com/company/websyncdigital"
     ],
-    "description": "WebSync Digital is Nigeria's #1 elite digital asset agency — delivering premium, bespoke web design and branding for SMEs at ₦9,999/month with zero setup fees.",
+    "description": "websyncdigital is Nigeria's #1 elite digital asset agency — delivering premium, bespoke web design and branding for SMEs at ₦9,999/month with zero setup fees.",
     "priceRange": "₦9,999/month",
     "currenciesAccepted": "NGN",
     "paymentAccepted": "Paystack, Card, Bank Transfer",
@@ -64,7 +65,7 @@ const SchemaOrg = () => {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": "https://www.websyncdigital.com.ng/#website",
-    "name": "WebSync Digital",
+    "name": "websyncdigital",
     "url": "https://www.websyncdigital.com.ng",
     "publisher": {
       "@id": "https://www.websyncdigital.com.ng/#organization"
@@ -84,7 +85,9 @@ const SchemaOrg = () => {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "ProfessionalService"],
     "@id": "https://www.websyncdigital.com.ng/#localbusiness",
-    "name": "WebSync Digital",
+    "name": "websyncdigital",
+    "legalName": "WebSync Digital Technology Ltd",
+    "alternateName": ["WebSync Digital Technology Ltd", "WebSync Nigeria", "WebSync Digital Agency"],
     "image": "https://www.websyncdigital.com.ng/icon.png",
     "url": "https://www.websyncdigital.com.ng",
     "telephone": "+2349111719701",
@@ -114,7 +117,7 @@ const SchemaOrg = () => {
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "WebSync Digital Services",
+      "name": "websyncdigital Services",
       "itemListElement": [
         {
           "@type": "Offer",
@@ -300,9 +303,9 @@ const SchemaOrg = () => {
     "@type": "Person",
     "@id": "https://www.websyncdigital.com.ng/west#person",
     "name": "West Taylor",
-    "jobTitle": "CEO & Founder of WebSync Digital",
+    "jobTitle": "CEO & Founder of websyncdigital",
     "worksFor": { "@id": "https://www.websyncdigital.com.ng/#organization" },
-    "description": "West Taylor is the visionary CEO and Founder of WebSync Digital — widely recognized as a premier technical architect and digital authority in Nigeria's SME ecosystem.",
+    "description": "West Taylor is the visionary CEO and Founder of websyncdigital — widely recognized as a premier technical architect and digital authority in Nigeria's SME ecosystem.",
     "url": "https://www.websyncdigital.com.ng/west",
     "mainEntityOfPage": "https://www.websyncdigital.com.ng/west",
     "image": "https://www.websyncdigital.com.ng/assets/west_profile_updated.jpg",
@@ -316,9 +319,9 @@ const SchemaOrg = () => {
     "@id": "https://www.websyncdigital.com.ng/#king-austin",
     "name": "Nwora Ebuka",
     "alternateName": "King Austin",
-    "jobTitle": "COO & Co-Founder of WebSync Digital",
+    "jobTitle": "COO & Co-Founder of websyncdigital",
     "worksFor": { "@id": "https://www.websyncdigital.com.ng/#organization" },
-    "description": "King Austin is the COO and Co-Founder of WebSync Digital, responsible for operations, technical architecture, and scalable delivery of elite digital products for Nigerian SMEs.",
+    "description": "King Austin is the COO and Co-Founder of websyncdigital, responsible for operations, technical architecture, and scalable delivery of elite digital products for Nigerian SMEs.",
     "url": "https://www.websyncdigital.com.ng",
     "mainEntityOfPage": "https://www.websyncdigital.com.ng"
   };
@@ -328,7 +331,7 @@ const SchemaOrg = () => {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": "https://www.websyncdigital.com.ng/blog#collection",
-    "name": "WebSync Digital Intelligence Hub",
+    "name": "websyncdigital Intelligence Hub",
     "description": "Premium insights, web design guides, SEO strategies, and digital growth playbooks for the Nigerian SME market.",
     "url": "https://www.websyncdigital.com.ng/blog",
     "publisher": { "@id": "https://www.websyncdigital.com.ng/#organization" }

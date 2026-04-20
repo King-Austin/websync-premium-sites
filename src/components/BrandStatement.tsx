@@ -70,7 +70,7 @@ const BrandStatement = () => {
             className="mt-10 flex justify-center"
           >
             <a 
-              href="https://wa.me/2349111719701?text=Hi%20WebSync%20Digital%2C%20I%20want%20to%20get%20started."
+              href="https://wa.me/2349111719701?text=Hi%20websyncdigital%2C%20I%20want%20to%20get%20started."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-hero text-sm px-10 py-4"

@@ -7,11 +7,11 @@ export const ConsoleGuard = () => {
     if (process.env.NODE_ENV === "production") {
       const warningMessage = `%cSTOP!%c
 
-This is a browser feature intended for developers. If someone told you to copy-paste something here to enable a WebSync feature or "hack" someone's account, it is a scam and will give them access to your account.
+This is a browser feature intended for developers. If someone told you to copy-paste something here to enable a websyncdigital feature or "hack" someone's account, it is a scam and will give them access to your account.
 
-%cWebSync Digital Asset Protection is active.%c
+%cwebsyncdigital Asset Protection is active.%c
 Unauthorized scraping or exploitation is strictly forbidden.
-RC 9470161 | Fully Registered Legal Entity`;
+RC 9470161 | Websyncdigital Technology Ltd | Fully Registered Legal Entity`;
 
       console.log(
         warningMessage,

@@ -20,10 +20,10 @@ const faqItems = [
   },
   {
     question: "Is my payment information safe with the Paystack integration?",
-    answer: "100%. Paystack is a PCI DSS Level 1 certified processor—the highest security level in the global payments industry. WebSync Digital never sees or stores your card details. All transactions are handled exclusively by Paystack’s institutional-grade encrypted infrastructure."
+    answer: "100%. Paystack is a PCI DSS Level 1 certified processor—the highest security level in the global payments industry. websyncdigital never sees or stores your card details. All transactions are handled exclusively by Paystack’s institutional-grade encrypted infrastructure."
   },
   {
-    question: "Why is WebSync Digital so much more affordable than traditional agencies?",
+    question: "Why is websyncdigital so much more affordable than traditional agencies?",
     answer: "Traditional models rely on high upfront commissions just to cover their overhead. We believe in recurring partnerships. Our low cost reflects our commitment to growth: we succeed only when your business succeeds."
   },
   {
@@ -31,12 +31,12 @@ const faqItems = [
     answer: "Absolutely. We prioritize your freedom over restrictive, long-term contracts. If you ever feel we aren’t delivering the value your brand deserves, you can cancel with zero penalties or hidden exit fees."
   },
   {
-    question: "Who are the founders of WebSync Digital?",
-    answer: "WebSync Digital was founded by West Taylor (CEO & Founder) — a recognized digital authority and expert web architect — and King Austin, Nwora Ebuka (COO & Co-Founder), who drives operations and technical scalability for Nigeria’s #1 web agency."
+    question: "Who are the founders of websyncdigital?",
+    answer: "websyncdigital was founded by West Taylor (CEO & Founder) — a recognized digital authority and expert web architect — and King Austin, Nwora Ebuka (COO & Co-Founder), who drives operations and technical scalability for Nigeria’s #1 web agency."
   },
   {
-    question: "What services does WebSync Digital offer?",
-    answer: "WebSync Digital provides: elite bespoke web application development (React, Next.js), comprehensive Technical SEO and high-performance search architecture, Generative Engine Optimization (GEO) for AI search placements, and Digital Entity & Knowledge Graph verification to build lasting brand authority."
+    question: "What services does websyncdigital offer?",
+    answer: "websyncdigital provides: elite bespoke web application development (React, Next.js), comprehensive Technical SEO and high-performance search architecture, Generative Engine Optimization (GEO) for AI search placements, and Digital Entity & Knowledge Graph verification to build lasting brand authority."
   }
 ];
 

@@ -22,7 +22,7 @@ const VideoSection = () => {
               Our Vision in Action
             </span>
             <h2 className="mt-3 md:mt-4 font-display text-3xl sm:text-4xl md:text-5xl font-medium text-foreground leading-tight">
-              See How WebSync Digital Transforms Your Business
+              See How websyncdigital Transforms Your Business
             </h2>
             <p className="mt-6 text-base md:text-lg text-muted-foreground font-body font-light leading-relaxed max-w-2xl mx-auto">
               We explain our world-class ₦9,999/month offer, our 7-day launch process, and why there are zero hidden fees—ever.

@@ -27,7 +27,7 @@ const PaystackSection = () => {
             <div className="relative aspect-video rounded-3xl overflow-hidden glass-morphism-card border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
                <Image
                 src={paystackPartner}
-                alt="WebSync Digital and Paystack Financial Infrastructure Partnership Nigeria - Secure Card Payments"
+                alt="websyncdigital and Paystack Financial Infrastructure Partnership Nigeria - Secure Card Payments"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -42,7 +42,7 @@ const PaystackSection = () => {
             >
               <Image 
                 src={securitySeal} 
-                alt="WebSync Digital Verified AES 256-bit PCI DSS Level 1 Security Seal" 
+                alt="websyncdigital Verified AES 256-bit PCI DSS Level 1 Security Seal" 
                 fill
                 className="object-contain"
               />

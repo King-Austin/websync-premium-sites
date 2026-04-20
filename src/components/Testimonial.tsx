@@ -71,7 +71,7 @@ const Testimonial = () => {
                 </span>
                 
                 <blockquote className="relative font-display text-xl sm:text-2xl md:text-3xl font-medium leading-[1.4] text-foreground tracking-tight">
-                  <span className="text-primary font-bold">West</span> and the WebSync Digital team are the best in the business. They were so good with us and our website, delivering top-tier quality and helping with every detail. We fully recommend WebSync Digital for your business growth.
+                  <span className="text-primary font-bold">West</span> and the websyncdigital team are the best in the business. They were so good with us and our website, delivering top-tier quality and helping with every detail. We fully recommend websyncdigital for your business growth.
                 </blockquote>
               </motion.div>
             </div>

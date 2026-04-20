@@ -64,7 +64,7 @@ const Comparison = () => {
                animate={isInView ? { opacity: 1 } : {}}
                className="text-[10px] uppercase font-bold tracking-[0.4em] text-primary/40 mb-6 block"
              >
-                Why Smart SMEs Choose WebSync Digital
+                Why Smart SMEs Choose websyncdigital
              </motion.span>
              <motion.h2 
                initial={{ opacity: 0, y: 30 }}
@@ -72,11 +72,11 @@ const Comparison = () => {
                transition={{ duration: 0.6 }}
                className="font-display text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight"
              >
-                What You Used to Pay vs.{' '}<span className="italic font-light text-primary">What You Pay with WebSync</span>
+                What You Used to Pay vs.{' '}<span className="italic font-light text-primary">What You Pay with websyncdigital</span>
              </motion.h2>
              <p className="mt-6 font-body text-base text-muted-foreground max-w-xl mx-auto">
                Traditional agencies charge you ₦400k–₦1.5M <em>before</em> building a single page.
-               WebSync Digital charges <strong>₦0 upfront</strong> and launches your business in 7 days.
+               websyncdigital charges <strong>₦0 upfront</strong> and launches your business in 7 days.
              </p>
           </div>
 
@@ -86,7 +86,7 @@ const Comparison = () => {
             {/* Table Header Row */}
             <div className="grid grid-cols-2 md:grid-cols-3 bg-[#0a0a0a] text-white py-8 px-6 md:px-10 border-b border-white/10">
                <div className="hidden md:block font-display text-xs uppercase tracking-widest font-bold opacity-30">Feature</div>
-               <div className="font-display text-xs md:text-sm uppercase tracking-[0.2em] font-black text-primary text-center md:text-left">WebSync Digital</div>
+               <div className="font-display text-xs md:text-sm uppercase tracking-[0.2em] font-black text-primary text-center md:text-left">websyncdigital</div>
                <div className="font-display text-xs md:text-sm uppercase tracking-[0.2em] font-bold opacity-30 text-center md:text-left">Traditional Agency</div>
             </div>
 
@@ -151,7 +151,7 @@ const Comparison = () => {
             </p>
 
             <a 
-              href="https://wa.me/2349111719701?text=Hi%20WebSync%20Digital%2C%20I%20want%20to%20get%20started."
+              href="https://wa.me/2349111719701?text=Hi%20websyncdigital%2C%20I%20want%20to%20get%20started."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-hero"

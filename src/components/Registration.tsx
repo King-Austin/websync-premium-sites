@@ -25,7 +25,7 @@ const Registration = () => {
             >
               <Image
                 src="/api/legal/cac" // Link hidden via API proxy with referrer protection
-                alt="WebSync Digital Registration Certificate Verified"
+                alt="websyncdigital Registration Certificate Verified"
                 width={483}
                 height={600}
                 className="object-contain pointer-events-none select-none unselectable"
@@ -37,7 +37,7 @@ const Registration = () => {
               <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-20 flex flex-col items-center justify-center rotate-[-35deg] scale-150 select-none">
                  <div className="whitespace-nowrap font-display text-[10px] md:text-[12px] font-black tracking-[0.5em] text-foreground/40 leading-[3em] uppercase">
                     {[...Array(30)].map((_, i) => (
-                      <div key={i} className="hover:text-primary transition-colors">WEBSYNC DIGITAL LEGAL ASSET (RC: 9470161) &nbsp;&nbsp; VERIFIED ENTITY</div>
+                      <div key={i} className="hover:text-primary transition-colors">websyncdigital LEGAL ASSET (RC: 9470161) &nbsp;&nbsp; VERIFIED ENTITY</div>
                     ))}
                  </div>
               </div>
@@ -45,7 +45,7 @@ const Registration = () => {
               {/* Secure Protective Overlay Layer */}
               <div 
                 className="absolute inset-0 z-[100] cursor-default bg-white/0 pointer-events-auto"
-                title="Legal Certificate Protected by WebSync Digital"
+                title="Legal Certificate Protected by websyncdigital"
               />
             </div>
           </motion.div>

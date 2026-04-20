@@ -9,6 +9,10 @@ export interface BlogPost {
   author: string;
   authorRole?: string;
   readTime?: string;
+  // Legal entity metadata for Google entity bridging — not rendered in UI
+  publisher?: string;
+  publisherLegalName?: string;
+  copyrightHolder?: string;
 }
 
 export const allBlogPosts: BlogPost[] = [
@@ -37,9 +41,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "January 20, 2024",
     category: "Security",
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200&h=800",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 20,
@@ -62,9 +69,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "January 15, 2024",
     category: "UI/UX Design",
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200&h=800",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 19,
@@ -87,9 +97,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "January 10, 2024",
     category: "Case Study",
     image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200&h=800",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "8 min read"
+    readTime: "8 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 18,
@@ -112,9 +125,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "January 05, 2024",
     category: "Tech Trends",
     image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=1200&h=800",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 17,
@@ -137,9 +153,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "January 01, 2024",
     category: "Business Strategy",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200&h=800",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 16,
@@ -162,9 +181,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "December 28, 2023",
     category: "Marketing",
     image: "/blog/article-16.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 15,
@@ -187,9 +209,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "December 20, 2023",
     category: "UI/UX Design",
     image: "/blog/article-15.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 14,
@@ -212,9 +237,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "December 10, 2023",
     category: "Security",
     image: "/blog/article-14.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 13,
@@ -237,9 +265,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "December 01, 2023",
     category: "Ecommerce",
     image: "/blog/article-13.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 12,
@@ -262,9 +293,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "November 20, 2023",
     category: "Business Strategy",
     image: "/blog/article-12.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 11,
@@ -287,9 +321,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "November 10, 2023",
     category: "Tech Trends",
     image: "/blog/article-11.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 10,
@@ -312,9 +349,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "November 01, 2023",
     category: "Business Strategy",
     image: "/blog/article-10.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 9,
@@ -337,9 +377,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "October 20, 2023",
     category: "UI/UX Design",
     image: "/blog/article-9.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 8,
@@ -365,9 +408,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "February 10, 2024",
     category: "Ecommerce",
     image: "/blog/article-8.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 7,
@@ -390,9 +436,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "February 15, 2024",
     category: "Ecommerce",
     image: "/blog/article-7.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 6,
@@ -415,9 +464,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "February 20, 2024",
     category: "Case Study",
     image: "/blog/article-6.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "4 min read"
+    readTime: "4 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 5,
@@ -443,9 +495,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "February 28, 2024",
     category: "Security",
     image: "/blog/article-5.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "8 min read"
+    readTime: "8 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 4,
@@ -471,9 +526,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "March 05, 2024",
     category: "UI/UX Design",
     image: "/blog/article-4.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 3,
@@ -515,9 +573,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "March 10, 2024",
     category: "Marketing",
     image: "/blog/article-3.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "9 min read"
+    readTime: "9 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 2,
@@ -543,9 +604,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "March 15, 2024",
     category: "Tech Trends",
     image: "/blog/article-2.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 1,
@@ -571,8 +635,11 @@ export const allBlogPosts: BlogPost[] = [
     date: "March 20, 2024",
     category: "Business Strategy",
     image: "/blog/article-1.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   }
 ];
