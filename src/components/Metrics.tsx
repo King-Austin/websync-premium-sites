@@ -5,7 +5,7 @@ import { useRef, useState, useEffect } from 'react';
 
 const metrics = [
   { value: 100, suffix: '+', label: 'SME Businesses Launched Online', sublabel: 'From ₦0 setup fee' },
-  { value: 98, suffix: '%', label: 'Business Owners Satisfied', sublabel: 'No lock-in contracts' },
+  { value: 98, suffix: '%', label: 'Business Owners Satisfied', sublabel: 'Strategic Service Tenure' },
   { value: 7, suffix: '-14', label: 'Days to Go Live', sublabel: 'Fastest in Nigeria' },
   { value: 24, suffix: '/7', label: 'Support — Always Here', sublabel: 'WhatsApp direct line' },
 ];
@@ -81,23 +81,7 @@ const Metrics = () => {
           ))}
         </div>
 
-        {/* CTA Row */}
-        <motion.div
-           initial={{ opacity: 0, y: 20 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{ once: true }}
-           transition={{ duration: 0.8, delay: 0.4 }}
-           className="mt-16 flex justify-center"
-        >
-          <a
-            href="https://wa.me/2349111719701?text=Hi%20WebSync%20Digital%2C%20I%20want%20to%20get%20started."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-hero"
-          >
-            Start Your Business Growth Today →
-          </a>
-        </motion.div>
+
 
         {/* SME Reality Check */}
         <motion.p

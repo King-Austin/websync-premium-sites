@@ -46,7 +46,7 @@ const FinalCTA = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-display text-4xl sm:text-5xl md:text-6xl font-medium text-foreground tracking-tight leading-tight text-balance"
             >
-              Ready to stop losing customers to <span className="text-primary italic font-light">slower competitors?</span>
+              Contact us today
             </motion.h2>
 
             <motion.p

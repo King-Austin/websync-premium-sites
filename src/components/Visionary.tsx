@@ -148,23 +148,7 @@ const Visionary = () => {
                 </div>
              </div>
 
-             {/* CTA Row */}
-             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
-               transition={{ duration: 0.8, delay: 0.2 }}
-               className="mt-24 flex justify-center"
-             >
-               <a 
-                 href="https://wa.me/2349111719701?text=Hi%20WebSync%20Digital%2C%20I%20want%20to%20build%20my%20digital%20legacy."
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="btn-hero px-12 py-5"
-               >
-                 Build Your Legacy Today →
-               </a>
-             </motion.div>
+
           </motion.div>
 
         </div>

@@ -115,16 +115,7 @@ export default function AboutPage() {
               <span>←</span> Back to Home
             </Link>
 
-            {/* Authority Badges */}
-            <div className="flex flex-wrap justify-center items-center gap-3 mb-8">
-              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
-                🏆 Nigeria&apos;s No.1 Web Agency
-              </span>
-              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-border bg-secondary text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-                <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-                CAC Verified · RC 9470161
-              </span>
-            </div>
+
 
             <span className="block text-sm font-body font-medium tracking-widest uppercase text-primary mb-4">
               Our Story

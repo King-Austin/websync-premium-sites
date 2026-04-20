@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Providers } from "@/components/providers";
 import SchemaOrg from "@/components/SchemaOrg";
 import { Analytics } from "@vercel/analytics/next";
+import { Preloader } from "@/components/Preloader";
 import "../index.css";
 
 
@@ -79,6 +80,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Preloader />
         <SchemaOrg />
         <Providers>{children}</Providers>
         <Analytics />

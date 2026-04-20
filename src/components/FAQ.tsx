@@ -54,13 +54,7 @@ const FAQ = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-10 md:mb-16"
         >
-          {/* Authority Stamp */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 mb-6">
-            <span className="text-xs">🏆</span>
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">
-              Nigeria&apos;s No.1 Web Agency · RC 9470161 Verified
-            </span>
-          </div>
+
           <span className="block text-sm font-body font-medium tracking-widest uppercase text-primary">
             Information
           </span>
@@ -92,25 +86,7 @@ const FAQ = () => {
           </Accordion>
         </motion.div>
         
-        <motion.div
-           initial={{ opacity: 0, y: 20 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           viewport={{ once: true }}
-           transition={{ duration: 0.8, delay: 0.2 }}
-           className="mt-16 flex flex-col items-center gap-6"
-        >
-          <p className="font-body text-sm text-muted-foreground text-center">
-            Still have questions about how we scale Nigerian businesses?
-          </p>
-          <a
-            href="https://wa.me/2349111719701?text=Hi%20WebSync%20Digital%2C%20I%20have%20a%20question%20about%20your%20services."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-hero"
-          >
-            Chat with our Team on WhatsApp
-          </a>
-        </motion.div>
+
       </div>
     </section>
   );

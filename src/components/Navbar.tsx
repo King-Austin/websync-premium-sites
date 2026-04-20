@@ -57,16 +57,6 @@ const Navbar = () => {
               }`}
               priority
             />
-            {/* #1 Authority Badge */}
-            <span
-              className={`hidden sm:inline-flex items-center gap-1 text-[9px] font-bold uppercase tracking-[0.18em] px-2.5 py-1 rounded-full border transition-all duration-300 ${
-                isScrolled
-                  ? 'border-primary/40 text-primary bg-primary/5'
-                  : 'border-white/30 text-white/80 bg-white/5'
-              }`}
-            >
-              🏆 No.1 in Nigeria
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -113,10 +103,6 @@ const Navbar = () => {
             aria-label="Mobile navigation menu"
           >
             <div className="container-custom flex flex-col items-center gap-8 py-12">
-              {/* Mobile Authority Badge */}
-              <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-2 rounded-full border border-primary/30 text-primary bg-primary/5">
-                🏆 Nigeria&apos;s No.1 Web Agency
-              </span>
 
               {navLinks.map((link, index) => (
                 <Link
