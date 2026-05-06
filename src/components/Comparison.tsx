@@ -35,7 +35,7 @@ const comparisonData = [
   },
   {
     feature: "Security Framework",
-    websync: "Bank-Grade (Mono Secured)",
+    websync: "PCI DSS (Paystack Secured)",
     traditional: "Basic SSL / High Vulnerability",
     websyncIcon: <Shield className="text-green-500" size={18} />,
     traditionalIcon: <X className="text-red-500" size={18} />,
@@ -64,7 +64,7 @@ const Comparison = () => {
                animate={isInView ? { opacity: 1 } : {}}
                className="text-[10px] uppercase font-bold tracking-[0.4em] text-primary/40 mb-6 block"
              >
-                The New Standard
+                Why Smart SMEs Choose websyncdigital
              </motion.span>
              <motion.h2 
                initial={{ opacity: 0, y: 30 }}
@@ -72,8 +72,12 @@ const Comparison = () => {
                transition={{ duration: 0.6 }}
                className="font-display text-4xl sm:text-5xl md:text-6xl font-medium tracking-tight"
              >
-                The Old Way vs. <span className="italic font-light text-primary">The WebSync Way</span>
+                What You Used to Pay vs.{' '}<span className="italic font-light text-primary">What You Pay with websyncdigital</span>
              </motion.h2>
+             <p className="mt-6 font-body text-base text-muted-foreground max-w-xl mx-auto">
+               Traditional agencies charge you ₦400k–₦1.5M <em>before</em> building a single page.
+               websyncdigital charges <strong>₦0 upfront</strong> and launches your business in 7 days.
+             </p>
           </div>
 
           {/* Table Container */}
@@ -82,7 +86,7 @@ const Comparison = () => {
             {/* Table Header Row */}
             <div className="grid grid-cols-2 md:grid-cols-3 bg-[#0a0a0a] text-white py-8 px-6 md:px-10 border-b border-white/10">
                <div className="hidden md:block font-display text-xs uppercase tracking-widest font-bold opacity-30">Feature</div>
-               <div className="font-display text-xs md:text-sm uppercase tracking-[0.2em] font-black text-primary text-center md:text-left">WebSync Digital</div>
+               <div className="font-display text-xs md:text-sm uppercase tracking-[0.2em] font-black text-primary text-center md:text-left">websyncdigital</div>
                <div className="font-display text-xs md:text-sm uppercase tracking-[0.2em] font-bold opacity-30 text-center md:text-left">Traditional Agency</div>
             </div>
 
@@ -120,25 +124,41 @@ const Comparison = () => {
                  </motion.div>
                ))}
             </div>
+          </div>
 
-            {/* Bottom Proof Bar */}
-            <div className="bg-[#0a0a0a] py-6 px-10 flex flex-col md:flex-row justify-between items-center gap-4">
-               <span className="text-[10px] uppercase font-bold tracking-widest text-primary/60">Verified Comparison Model 2026</span>
-               <a href="#pricing" className="text-xs font-black uppercase tracking-widest text-white hover:text-primary transition-colors">
-                  Switch to WebSync Now →
-               </a>
+          {/* Bottom Proof Bar & CTA */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-12 flex flex-col items-center gap-8"
+          >
+            <div className="w-full relative rounded-[2.5rem] overflow-hidden border border-border shadow-2xl bg-white">
+              {/* Previous Table Content remains same, adding CTA below */}
+              
+              {/* Bottom Proof Bar */}
+              <div className="bg-[#0a0a0a] py-6 px-10 flex flex-col md:flex-row justify-between items-center gap-4">
+                 <span className="text-[10px] uppercase font-bold tracking-widest text-primary/60">Verified Comparison Model 2026</span>
+                 <a href="https://wa.me/2349111719701?text=I%20want%20to%20switch%20to%20WebSync%20Digital." className="text-xs font-black uppercase tracking-widest text-white hover:text-primary transition-colors">
+                    Switch to WebSync Now — Chat on WhatsApp →
+                 </a>
+              </div>
             </div>
 
-          </div>
+            <p className="text-sm font-body text-muted-foreground font-light leading-relaxed max-w-xl text-center italic">
+               &quot;While your competitor&apos;s site was still <strong>being built</strong>, your WebSync site already had <strong>customers calling</strong>. That&apos;s the 7-day difference.&quot;
+            </p>
 
-          {/* Subtitle / Scarcity reinforcement */}
-          <div className="mt-12 text-center">
-             <p className="text-sm font-body text-muted-foreground font-light leading-relaxed max-w-xl mx-auto italic">
-                &quot;The gap between a ₦500k upfront fee and ₦9,999/month isn&apos;t just pricing—it&apos;s 
-                <strong> Corporate Freedom</strong> for the business owner.&quot;
-             </p>
-          </div>
-
+            <a 
+              href="https://wa.me/2349111719701?text=Hi%20websyncdigital%2C%20I%20want%20to%20get%20started."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-hero"
+            >
+              Get Started for ₦9,999/month
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>

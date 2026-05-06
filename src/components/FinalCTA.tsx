@@ -3,7 +3,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
-import ctaImage from '@/assets/final-cta-image.png';
+import ctaImage from '../../public/assets/final-cta-image.png';
 
 const FinalCTA = () => {
   const ref = useRef(null);
@@ -24,7 +24,7 @@ const FinalCTA = () => {
              <div className="relative w-full max-w-2xl aspect-video overflow-hidden rounded-[2.5rem] shadow-xl ring-1 ring-border/10 group bg-secondary/30">
                 <Image 
                   src={ctaImage} 
-                  alt="Ready to scale your business with WebSync Digital"
+                  alt="WebSync Digital Nigeria - Elite Web Design Strategy and Executive Consulting"
                   fill
                   className="object-contain p-4 rounded-[2rem] transition-transform duration-700 group-hover:scale-105"
                 />
@@ -46,7 +46,7 @@ const FinalCTA = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-display text-4xl sm:text-5xl md:text-6xl font-medium text-foreground tracking-tight leading-tight text-balance"
             >
-              Ready to create something <span className="text-primary italic font-light">extraordinary?</span>
+              Contact us today
             </motion.h2>
 
             <motion.p
@@ -55,9 +55,9 @@ const FinalCTA = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-muted-foreground font-body font-light leading-relaxed max-w-xl mx-auto lg:mx-0"
             >
-              Start a conversation with Nigeria&apos;s elite web agency. 
-              West & King Austin provide the digital infrastructure your brand deserves. 
-              Scale your legacy today.
+              Get a premium, enterprise-grade website for your business today. 
+              <strong> ₦9,999/month. Zero setup fees.</strong> No technical skills needed. 
+              We handle the tech, you handle the growth.
             </motion.p>
 
             <motion.div
@@ -72,7 +72,7 @@ const FinalCTA = () => {
                 rel="noopener noreferrer" 
                 className="btn-hero"
               >
-                Chat on WhatsApp
+                Chat on WhatsApp — Get Started
               </a>
             </motion.div>
           </div>

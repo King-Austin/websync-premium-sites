@@ -3,10 +3,10 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
-import monoPartner from "@/assets/mono-partner.png";
-import securitySeal from "@/assets/security-seal.webp";
+import paystackPartner from "../../public/assets/paystack-logo.jpg";
+import securitySeal from "../../public/assets/security-seal.png";
 
-const MonoSection = () => {
+const PaystackSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -26,8 +26,8 @@ const MonoSection = () => {
           >
             <div className="relative aspect-video rounded-3xl overflow-hidden glass-morphism-card border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
                <Image
-                src={monoPartner}
-                alt="WebSync Digital and Mono Security Partnership"
+                src={paystackPartner}
+                alt="websyncdigital and Paystack Financial Infrastructure Partnership Nigeria - Secure Card Payments"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -38,11 +38,11 @@ const MonoSection = () => {
               initial={{ opacity: 0, scale: 0, rotate: -20 }}
               animate={isInView ? { opacity: 1, scale: 1, rotate: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.5, type: 'spring' }}
-              className="absolute -top-6 -right-6 w-24 h-24 md:w-32 md:h-32 drop-shadow-[0_0_20px_rgba(37,99,235,0.4)] z-10"
+              className="absolute -top-6 -right-6 w-24 h-24 md:w-32 md:h-32 drop-shadow-[0_0_20px_rgba(37,99,235,0.4)] z-10 rounded-full overflow-hidden"
             >
               <Image 
                 src={securitySeal} 
-                alt="WebSync Verified Security Seal" 
+                alt="websyncdigital Verified AES 256-bit PCI DSS Level 1 Security Seal" 
                 fill
                 className="object-contain"
               />
@@ -61,30 +61,30 @@ const MonoSection = () => {
                 Infrastructure Partner
               </span>
               <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight">
-                Secure & Seamless Payments via Mono
+                Secure & Seamless Payments via Paystack
               </h2>
             </div>
 
             <div className="space-y-4 text-white/70 font-body font-light text-base lg:text-lg leading-relaxed">
               <p>
-                To power our frictionless ₦9,999 monthly subscription model, we’ve partnered with <span className="text-white font-medium">Mono</span>—Africa&apos;s leading financial infrastructure provider.
+                To power our frictionless ₦9,999 monthly subscription model, we’ve partnered with <span className="text-white font-medium">Paystack</span>—Africa&apos;s leading payment infrastructure provider.
               </p>
               <p>
-                <span className="text-white font-medium">Mono connects directly to your bank securely.</span> It uses your <span className="text-white font-medium">BVN and Account Number</span> as KYC solely to verify ownership. This process ensures that payments are accurate and that your financial identity is fully protected.
+                <span className="text-white font-medium">Paystack enables secure, card-based automated billing.</span> This ensures your subscription remains active without manual effort, while your sensitive financial data is protected by global industry standards.
               </p>
               <p>
-                Most importantly: <span className="text-primary font-medium italic">We never store your bank credentials or have direct access to your account.</span> All transactions are encrypted with bank-grade 256-bit AES security, ensuring that your business and bank information remain private and 100% secure.
+                Most importantly: <span className="text-primary font-medium italic">We never store your card details or bank credentials.</span> All transactions are encrypted with PCI DSS Level 1 security—the highest possible level in the global payments industry, ensuring that your business and financial information remain 100% secure.
               </p>
             </div>
 
             <div className="pt-4">
               <a 
-                href="https://mono.co" 
+                href="https://paystack.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm font-bold tracking-widest uppercase text-white/90 hover:text-primary transition-colors group"
               >
-                Learn more about Mono security
+                Learn more about Paystack security
                 <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
               </a>
             </div>
@@ -95,4 +95,5 @@ const MonoSection = () => {
   );
 };
 
-export default MonoSection;
+export default PaystackSection;
+

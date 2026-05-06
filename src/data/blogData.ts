@@ -9,6 +9,10 @@ export interface BlogPost {
   author: string;
   authorRole?: string;
   readTime?: string;
+  // Legal entity metadata for Google entity bridging — not rendered in UI
+  publisher?: string;
+  publisherLegalName?: string;
+  copyrightHolder?: string;
 }
 
 export const allBlogPosts: BlogPost[] = [
@@ -37,9 +41,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "January 20, 2024",
     category: "Security",
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200&h=800",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 20,
@@ -62,9 +69,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "January 15, 2024",
     category: "UI/UX Design",
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1200&h=800",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 19,
@@ -87,9 +97,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "January 10, 2024",
     category: "Case Study",
     image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200&h=800",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "8 min read"
+    readTime: "8 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 18,
@@ -112,9 +125,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "January 05, 2024",
     category: "Tech Trends",
     image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=1200&h=800",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 17,
@@ -137,9 +153,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "January 01, 2024",
     category: "Business Strategy",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1200&h=800",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 16,
@@ -162,9 +181,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "December 28, 2023",
     category: "Marketing",
     image: "/blog/article-16.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 15,
@@ -187,9 +209,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "December 20, 2023",
     category: "UI/UX Design",
     image: "/blog/article-15.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 14,
@@ -205,16 +230,19 @@ export const allBlogPosts: BlogPost[] = [
       <p>Compliance involves both technical and organizational measures. Technically, you need encryption at rest and in transit, secure hosting, and regular security audits. Organizationally, you need to ensure that only authorized employees have access to sensitive data and that you have a plan for responding to data breaches. The NDPR also gives users the "Right to be Forgotten," meaning you must be able to delete a customer's data upon their request.</p>
       
       <h3>Building Trust as a Competitive Advantage</h3>
-      <p>Instead of viewing NDPR as a hurdle, view it as a badge of honor. In a market where trust is often fragile, being able to say "We are 100% NDPR compliant" is a massive marketing win. It signals to your customers that you value them and are professional enough to protect their most sensitive assets. WebSync builds compliance into the DNA of our projects, ensuring that you are protected from day one.</p>
+      <p>Instead of viewing NDPR as a hurdle, view it as a badge of honor. As a fully registered and verified entity (RC 9470161), WebSync Digital takes these legal pillars seriously. In a market where trust is often fragile, being able to say "We are 100% NDPR compliant" is a massive marketing win. It signals to your customers that you value them and are professional enough to protect their most sensitive assets. WebSync builds compliance into the DNA of our projects, ensuring that you are protected from day one.</p>
       
       <p>The future of Nigerian business is data-driven, but it must also be privacy-protected. Let us help you navigate the complexities of NDPR so you can focus on what you do best: growing your business.</p>
     `,
     date: "December 10, 2023",
     category: "Security",
     image: "/blog/article-14.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 13,
@@ -237,9 +265,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "December 01, 2023",
     category: "Ecommerce",
     image: "/blog/article-13.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 12,
@@ -262,9 +293,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "November 20, 2023",
     category: "Business Strategy",
     image: "/blog/article-12.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 11,
@@ -287,9 +321,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "November 10, 2023",
     category: "Tech Trends",
     image: "/blog/article-11.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 10,
@@ -299,10 +336,10 @@ export const allBlogPosts: BlogPost[] = [
       <p>The Nigerian consumer is one of the most resilient and savvy in the world, but they are also incredibly skeptical. Years of online scams and 'What I Ordered vs. What I Got' experiences have created a barrier to entry for many digital businesses. To succeed in this market, your website must do more than just sell a product—it must actively disarm skepticism. Building trust online is not an accident; it's a deliberate design strategy that turns a suspicious browser into a loyal customer.</p>
       
       <h3>Cue 1: Radical Transparency</h3>
-      <p>Skepticism grows in the dark. To build trust, you must be a 'glass house.' This means clear, up-front pricing (no "DM for price"), visible physical address or office locations in Nigeria, and professional team photos. When a customer can see who is behind the brand and where they are located, the perceived risk of the transaction drops significantly. Transparency isn't just about honesty; it's about the 'visual evidence' of your legitimacy.</p>
+      <p>Skepticism grows in the dark. To build trust, you must be a 'glass house.' This means clear, up-front pricing (no "DM for price"), visible physical address or office locations in Nigeria (like our official RC 9470161 registration), and professional team photos. When a customer can see who is behind the brand and where they are located, the perceived risk of the transaction drops significantly. Transparency isn't just about honesty; it's about the 'visual evidence' of your legitimacy.</p>
       
       <h3>Cue 2: Social and Institutional Verification</h3>
-      <p>Nigerians trust other Nigerians more than they trust any brand. Integrating real, verifiable testimonials with photos and social media handles is critical. Furthermore, displaying logos of your professional certifications, associations (like NASME or MAN), and secure payment partners (like Paystack or Mono) provides 'borrowed authority.' If a customer trusts the bank that processes the payment, they are one step closer to trusting the business that receives it.</p>
+      <p>Nigerians trust other Nigerians more than they trust any brand. Integrating real, verifiable testimonials with photos and social media handles is critical. Furthermore, displaying logos of your professional certifications, associations (like NASME or MAN), and secure payment partners (like Paystack) provides 'borrowed authority.' If a customer trusts the bank that processes the payment, they are one step closer to trusting the business that receives it.</p>
       
       <h3>Cue 3: Professional Consistency</h3>
       <p>Nothing kills trust faster than a broken link, a blurry image, or a spelling error on your checkout page. Professionalism is the universal language of reliability. A high-fidelity, premium website that functions perfectly every time signals that you are a serious organization with the resources and attention to detail to fulfill your promises. It's the difference between a 'hustle' and a 'business'.</p>
@@ -312,9 +349,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "November 01, 2023",
     category: "Business Strategy",
     image: "/blog/article-10.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 9,
@@ -337,9 +377,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "October 20, 2023",
     category: "UI/UX Design",
     image: "/blog/article-9.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 8,
@@ -352,7 +395,7 @@ export const allBlogPosts: BlogPost[] = [
       <p>While the standard WhatsApp Business app is great for small operations, the WhatsApp Business API allows for much deeper automation and multi-agent support. It enables you to send automated notifications, integrate with your CRM, and handle thousands of inquiries without your phone crashing. At WebSync, we recommend the API for businesses looking to handle more than 50 inquiries a day. It moves you from being 'a person with a phone' to 'a company with a system'.</p>
       
       <h3>2. Bridging the 'Chat-to-Checkout' Gap</h3>
-      <p>The biggest friction in WhatsApp marketing is the manual payment process. Sending your account number and waiting for a screenshot of the alert is slow and prone to error. The goal should be to drive users from a WhatsApp inquiry to a specific product page on your website where they can pay instantly via Paystack or Mono. This 'click-to-chat to click-to-buy' flow reduces the time-to-sale and makes your business feel significantly more professional.</p>
+      <p>The biggest friction in WhatsApp marketing is the manual payment process. Sending your account number and waiting for a screenshot of the alert is slow and prone to error. The goal should be to drive users from a WhatsApp inquiry to a specific product page on your website where they can pay instantly via Paystack. This 'click-to-chat to click-to-buy' flow reduces the time-to-sale and makes your business feel significantly more professional.</p>
       
       <h3>3. Status Marketing and the Power of Storytelling</h3>
       <p>Your WhatsApp Status is your most valuable organic reach tool. Instead of just posting price lists, post 'behind-the-scenes' content, customer reviews, and educational snippets. Use the 24-hour window to create a sense of urgency for special offers. Every Status update should have a clear call to action (CTA)—"Click the link in my bio to order" or "Swipe up to see the full collection on our site."</p>
@@ -365,9 +408,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "February 10, 2024",
     category: "Ecommerce",
     image: "/blog/article-8.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 7,
@@ -383,16 +429,19 @@ export const allBlogPosts: BlogPost[] = [
       <p>Nothing kills a sale faster than an 'unexpected' shipping fee at the very last step. In the Nigerian market, transparency is your best sales tool. Display clear delivery costs early in the journey, or better yet, offer free shipping over a certain threshold. When a customer feels like they are being surprised by hidden costs, their trust evaporates. Clear, up-front information is the ultimate friction-remover.</p>
       
       <h3>The Multi-Gate payment Strategy</h3>
-      <p>Not all payment methods are created equal. Some Nigerian customers prefer credit cards, others bank transfers, and many are now moving toward USSD or Mono bank-linking. Your site must offer a diverse range of reliable payment options to accommodate these preferences. Furthermore, clear 'Secure Payment' badges and real-time support (like a Live Chat bubble) can provide the final push of confidence needed to click that 'Pay' button.</p>
+      <p>Not all payment methods are created equal. Some Nigerian customers prefer credit cards, others bank transfers, and many are now moving toward USSD or Paystack-enabled bank options. Your site must offer a diverse range of reliable payment options to accommodate these preferences. Furthermore, clear 'Secure Payment' badges and real-time support (like a Live Chat bubble) can provide the final push of confidence needed to click that 'Pay' button.</p>
       
       <p>At WebSync, we don't just build websites; we build conversion machines. Our checkout flows are architected for the reality of the Nigerian shopper—fast, secure, and incredibly intuitive.</p>
     `,
     date: "February 15, 2024",
     category: "Ecommerce",
     image: "/blog/article-7.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 6,
@@ -415,9 +464,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "February 20, 2024",
     category: "Case Study",
     image: "/blog/article-6.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "4 min read"
+    readTime: "4 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 5,
@@ -430,7 +482,7 @@ export const allBlogPosts: BlogPost[] = [
       <p>While many see the 'padlock' icon as standard, true SSL (Secure Sockets Layer) implementation involves more than just a free certificate. We ensure that your site uses modern TLS 1.3 protocols, encrypting all data in transit. This is critical in Nigeria, where many users browse on public Wi-Fi or shared networks in hubs and offices. Your customers need to know that their personal info is invisible to prying eyes.</p>
       
       <h3>2. Outsourcing Risk to Professionals</h3>
-      <p>One of the biggest security mistakes SMEs make is trying to store sensitive financial data themselves. We follow the principle of 'Zero-Storage' for payment info. By integrating directly with enterprise processors like Paystack and Mono via secure webhooks, we ensure that your customers' credit card or bank details never even touch your database. If you don't store it, you can't lose it.</p>
+      <p>One of the biggest security mistakes SMEs make is trying to store sensitive financial data themselves. We follow the principle of 'Zero-Storage' for payment info. By integrating directly with enterprise processors like Paystack via secure webhooks, we ensure that your customers' credit card or bank details never even touch your database. If you don't store it, you can't lose it.</p>
       
       <h3>3. DDoS Protection and Nigerian Connectivity</h3>
       <p>Distributed Denial of Service (DDoS) attacks can take a site down in minutes, costing you sales during peak periods. We deploy all our sites on global edge networks with built-in DDoS mitigation. This means that even if someone tries to 'flood' your site with fake traffic, our systems automatically filter it out, ensuring your real Nigerian customers can always reach you. We provide the same kind of resilience that major banks use to stay online 24/7.</p>
@@ -443,9 +495,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "February 28, 2024",
     category: "Security",
     image: "/blog/article-5.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "8 min read"
+    readTime: "8 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 4,
@@ -471,9 +526,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "March 05, 2024",
     category: "UI/UX Design",
     image: "/blog/article-4.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 3,
@@ -515,9 +573,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "March 10, 2024",
     category: "Marketing",
     image: "/blog/article-3.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "9 min read"
+    readTime: "9 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 2,
@@ -543,9 +604,12 @@ export const allBlogPosts: BlogPost[] = [
     date: "March 15, 2024",
     category: "Tech Trends",
     image: "/blog/article-2.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "7 min read"
+    readTime: "7 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   },
   {
     id: 1,
@@ -571,8 +635,11 @@ export const allBlogPosts: BlogPost[] = [
     date: "March 20, 2024",
     category: "Business Strategy",
     image: "/blog/article-1.png",
-    author: "WebSync Digital",
+    author: "websyncdigital",
     authorRole: "Corporate Authority",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    publisher: "websyncdigital",
+    publisherLegalName: "Websyncdigital Technology Ltd",
+    copyrightHolder: "Websyncdigital Technology Ltd"
   }
 ];

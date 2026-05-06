@@ -1,14 +1,19 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
+Allow: /pricing
+Allow: /work
+Allow: /contact
+Allow: /blog
+Allow: /west
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+
+# Explicitly invite Googlebot for maximum crawl priority
+User-agent: Googlebot
+Allow: /
+Disallow: /private/
+Disallow: /api/
+
+Sitemap: https://www.websyncdigital.com.ng/sitemap.xml
+Host: https://www.websyncdigital.com.ng

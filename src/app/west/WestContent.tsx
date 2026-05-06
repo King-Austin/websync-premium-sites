@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Instagram, ExternalLink, Cpu, Target, Rocket } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "../../../public/assets/logo.png";
 
 export default function WestProfile() {
   return (

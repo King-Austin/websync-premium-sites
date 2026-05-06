@@ -3,15 +3,15 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
-import westProfile from "@/assets/west_profile_updated.jpg";
-import austinProfile from "@/assets/nworah-ebuka-augustus.jpg";
+import westProfile from "../../public/assets/west_profile_updated.jpg";
+import austinProfile from "../../public/assets/nworah-ebuka-augustus.jpg";
 
 const Visionary = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="founders" className="py-24 md:py-32 lg:py-40 bg-background overflow-hidden">
+    <section id="vision" className="py-24 md:py-32 lg:py-40 bg-background overflow-hidden">
       <div className="container-custom">
         <div ref={ref} className="max-w-4xl mx-auto text-center">
           
@@ -41,7 +41,7 @@ const Visionary = () => {
             transition={{ duration: 1, delay: 0.4 }}
             className="mt-10 md:mt-14 text-lg md:text-xl lg:text-2xl text-muted-foreground font-body font-light leading-relaxed max-w-2xl mx-auto"
           >
-             WebSync Digital was born from a simple truth: your business deserves a world-class presence, 
+             websyncdigital was born from a simple truth: your business deserves a world-class presence, 
              regardless of your setup budget. We removed the ₦500k barrier so you can focus on what matters—scaling your legacy.
           </motion.p>
 
@@ -56,7 +56,7 @@ const Visionary = () => {
                 <span className="text-[10px] uppercase font-bold tracking-[0.4em] text-primary/60">
                    Meet The Visionaries
                 </span>
-                <h3 className="mt-4 font-display text-3xl md:text-4xl font-semibold tracking-tight">The Minds Behind WebSync Digital</h3>
+                <h3 className="mt-4 font-display text-3xl md:text-4xl font-semibold tracking-tight">The Minds Behind websyncdigital</h3>
              </div>
 
              <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 text-left max-w-4xl mx-auto">
@@ -65,7 +65,7 @@ const Visionary = () => {
                    <div className="relative aspect-square md:aspect-[4/5] overflow-hidden rounded-[2rem] bg-secondary border border-border/50 shadow-lg transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-2xl">
                       <Image 
                         src={westProfile} 
-                        alt="West Taylor - Founder & CEO of WebSync Digital Nigeria" 
+                        alt="West Taylor - Founder & CEO of websyncdigital Nigeria" 
                         fill 
                         itemProp="image"
                         className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -85,7 +85,7 @@ const Visionary = () => {
                          ))}
                       </div>
                       <p className="pt-6 text-sm md:text-base font-body italic text-muted-foreground leading-relaxed border-t border-border/30 mt-6 md:mt-8" itemProp="description">
-                         &quot;My goal is simple: to make &apos;Professional&apos; the new standard for every Nigerian business online. WebSync Digital provides the premium infrastructure you need to look elite, communicate effectively, and capture the market&apos;s trust—driving the exponential growth your hard work deserves.&quot;
+                         &quot;My goal is simple: to make &apos;Professional&apos; the new standard for every Nigerian business online. websyncdigital provides the premium infrastructure you need to look elite, communicate effectively, and capture the market&apos;s trust—driving the exponential growth your hard work deserves.&quot;
                       </p>
                       <div className="pt-6">
                          <a 
@@ -107,7 +107,7 @@ const Visionary = () => {
                    <div className="relative aspect-square md:aspect-[4/5] overflow-hidden rounded-[2rem] bg-secondary border border-border/50 shadow-lg transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-2xl">
                       <Image 
                         src={austinProfile} 
-                        alt="King Austin (Nwora Ebuka) - Co-Founder & COO of WebSync Digital" 
+                        alt="King Austin (Nwora Ebuka) - Co-Founder & COO of websyncdigital" 
                         fill 
                         itemProp="image"
                         className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -147,6 +147,8 @@ const Visionary = () => {
                    </div>
                 </div>
              </div>
+
+
           </motion.div>
 
         </div>

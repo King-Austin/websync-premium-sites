@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Registration from '@/components/Registration';
-import MonoSection from '@/components/MonoSection';
+import PaystackSection from '@/components/PaystackSection';
 import VideoSection from '@/components/VideoSection';
 import Pricing from '@/components/Pricing';
 import Metrics from '@/components/Metrics';
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "₦10000 website creation", "Small dropshipping store Nigeria", "WordPress experts Lagos",
     "How to get a website in Nigeria", "Best cheap web hosting Nigeria", "Website management monthly",
     "SME loans and branding Nigeria", "WebSync Digital Pro Plan", "Online store setup Nigeria",
-    "Paystack integrated websites", "Flutterwave checkout ecommerce", "Mono secure payments web design",
+    "Paystack integrated websites", "Flutterwave checkout ecommerce", "Paystack secure payments web design",
     "Fast website creation 7 days", "Digital transformation Nigeria", "Web design firm Lekki",
     "Buy a website in Naira", "Local SEO services Lagos", "E-commerce store developer Nigeria",
     "Website subscription plan Lagos", "Top 10 web designers in Nigeria", "Best portfolio website builder",
@@ -43,7 +43,8 @@ const serviceSchema = {
   "name": "WebSync Pro Plan",
   "provider": {
     "@type": "Organization",
-    "name": "WebSync Digital"
+    "name": "WebSync Digital",
+    "taxID": "9470161"
   },
   "description": "Premium 7-day website launch for Nigerian SMEs with zero setup fees and ₦9,999 monthly subscription.",
   "offers": {
@@ -66,7 +67,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Registration />
-      <MonoSection />
+      <PaystackSection />
       <VideoSection />
       <Pricing />
       <Metrics />

@@ -3,7 +3,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
-import registrationBadge from '@/assets/registration-badge.jpg';
 
 const Registration = () => {
   const ref = useRef(null);
@@ -19,28 +18,35 @@ const Registration = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="w-full md:w-1/2 lg:w-2/5"
-            onContextMenu={(e) => e.preventDefault()}
           >
-            <div className="relative aspect-[3/4] md:aspect-auto md:h-[500px] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-border/50 bg-white/50 p-2 select-none group">
+            <div className="relative aspect-[3/4] md:aspect-auto md:h-[500px] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-border/50 bg-white/50 p-2 select-none group touch-none"
+                 onContextMenu={(e) => e.preventDefault()}
+                 onDragStart={(e) => e.preventDefault()}
+            >
               <Image
-                src={registrationBadge}
-                alt="WebSync Digital Registration Certificate"
-                fill
-                className="object-contain pointer-events-none"
+                src="/api/legal/cac" // Link hidden via API proxy with referrer protection
+                alt="websyncdigital Registration Certificate Verified"
+                width={483}
+                height={600}
+                className="object-contain pointer-events-none select-none unselectable"
                 draggable={false}
+                priority
               />
               
-              {/* Persistent Grid Watermark - Renders theft useless */}
+              {/* Dynamic Watermark Overlay - Renders screenshotting difficult */}
               <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-20 flex flex-col items-center justify-center rotate-[-35deg] scale-150 select-none">
-                 <div className="whitespace-nowrap font-display text-[12px] font-black tracking-[0.5em] text-foreground/40 leading-[3em] uppercase">
-                    {[...Array(20)].map((_, i) => (
-                      <div key={i}>WEBSYNC DIGITAL - VERIFIED ASSET &nbsp;&nbsp; WEBSYNC DIGITAL - VERIFIED ASSET</div>
+                 <div className="whitespace-nowrap font-display text-[10px] md:text-[12px] font-black tracking-[0.5em] text-foreground/40 leading-[3em] uppercase">
+                    {[...Array(30)].map((_, i) => (
+                      <div key={i} className="hover:text-primary transition-colors">websyncdigital LEGAL ASSET (RC: 9470161) &nbsp;&nbsp; VERIFIED ENTITY</div>
                     ))}
                  </div>
               </div>
 
-              {/* Invisible Protection Overlay */}
-              <div className="absolute inset-0 z-50 cursor-default bg-transparent" />
+              {/* Secure Protective Overlay Layer */}
+              <div 
+                className="absolute inset-0 z-[100] cursor-default bg-white/0 pointer-events-auto"
+                title="Legal Certificate Protected by websyncdigital"
+              />
             </div>
           </motion.div>
 
@@ -55,19 +61,19 @@ const Registration = () => {
               Certified Security & Trust
             </span>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium text-foreground leading-tight">
-              We Are Registered. Trust Delivered. <span className="text-sm md:text-base font-body font-bold text-primary ml-2 tracking-widest">(RC: 2008341)</span>
+              We Are Registered. Trust Delivered. <span className="text-sm md:text-base font-body font-bold text-primary ml-2 tracking-widest">(RC: 9470161)</span>
             </h2>
             <p className="mt-6 text-base md:text-lg text-muted-foreground font-body font-light leading-relaxed max-w-xl">
-              Partner with a fully registered entity dedicated to building professional digital landscapes for Nigerian SMEs. To ensure the highest level of trust, we use **Mono** for secure, automated payments. **We never have access to your bank account or private credentials.** All sensitive verification (BVN/KYC) and processing are handled exclusively by <a href="https://mono.co" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline underline-offset-4 decoration-primary/30">Mono.co</a>—the gold standard in African financial infrastructure. Your business is safe with **us**.
+              Partner with a fully registered entity dedicated to building professional digital landscapes for Nigerian SMEs. To ensure the highest level of trust, we use **Paystack** for secure, automated payments. **We never have access to your card details or bank credentials.** All sensitive transaction processing is handled exclusively by <a href="https://paystack.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline underline-offset-4 decoration-primary/30">Paystack.com</a>—the gold standard in African financial infrastructure. Your business is safe with **us**.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center gap-6 justify-center md:justify-start">
               <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full border border-border/50 shadow-sm backdrop-blur-sm">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                <span className="text-[10px] uppercase tracking-widest font-bold">Secure via Mono</span>
+                <span className="text-[10px] uppercase tracking-widest font-bold">Secure via Paystack</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full border border-border/50 shadow-sm backdrop-blur-sm">
                 <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
-                <span className="text-[10px] uppercase tracking-widest font-bold">Direct Debit Compliant</span>
+                <span className="text-[10px] uppercase tracking-widest font-bold">PCI DSS Level 1 Compliant</span>
               </div>
             </div>
 
