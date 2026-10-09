@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useInView } from 'framer-motion';
-import heroImage from '@/assets/hero-image.jpg';
+import heroImage from '../../public/assets/hero-image.jpg';
 import Image from 'next/image';
 import { useRef } from 'react';
 
@@ -20,7 +20,7 @@ const Hero = () => {
       >
         <Image
           src={heroImage}
-          alt="WebSync Digital - Modern architectural interior with dramatic minimalist lighting providing inspiration for digital design"
+          alt="websyncdigital - Modern architectural interior with dramatic minimalist lighting providing inspiration for digital design"
           fill
           className="object-cover"
           priority
@@ -35,24 +35,23 @@ const Hero = () => {
         <div className="container-custom">
           <div className="max-w-3xl">
             <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-primary-foreground leading-tight text-shadow-hero text-balance"
+              viewport={{ once: true }}
+              className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-primary-foreground leading-tight text-shadow-hero text-balance text-left"
             >
               Powering Nigerian Businesses with World-Class Websites. Only ₦9,999 Monthly.
             </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 40 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              className="mt-4 md:mt-6 text-base md:text-lg lg:text-xl text-primary-foreground/90 font-body font-light max-w-2xl"
-            >
-              Join 100+ Nigerian businesses scaling with WebSync Digital. 
-              The most affordable high-end web design agency in Lagos. 
-              Launched in 7 days. Guaranteed SME growth.
-            </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="mt-4 md:mt-6 text-base md:text-lg lg:text-xl text-primary-foreground/90 font-body font-light max-w-2xl text-left"
+          >
+            Join 100+ Nigerian businesses scaling with websyncdigital. The most affordable high-end web design agency in Lagos. Launched in 7 days. Guaranteed SME growth.
+          </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -60,8 +59,13 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.7 }}
               className="mt-8 md:mt-10 flex flex-wrap gap-4"
             >
-              <a href="#pricing" className="btn-hero">
-                Get Started for ₦9,999/month
+              <a 
+                href="https://paystack.shop/pay/qgnem3g4a8" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-hero"
+              >
+                GET STARTED FOR ₦9,999/MONTH
               </a>
               <a
                 href="https://wa.me/2349111719701"
@@ -69,7 +73,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="btn-hero-outline"
               >
-                Chat on WhatsApp
+                CHAT ON WHATSAPP
               </a>
             </motion.div>
           </div>

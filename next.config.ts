@@ -1,6 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/about',
+        destination: '/#vision',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
@@ -39,6 +48,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  productionBrowserSourceMaps: false,
 };
 
 export default nextConfig;

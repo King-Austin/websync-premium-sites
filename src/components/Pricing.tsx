@@ -8,6 +8,7 @@ const pricingPlans = [
   {
     name: "WebSync Pro",
     price: "₦9,999",
+    originalPrice: "₦498,000",
     period: "/month",
     description: "Ideal for growing teams and businesses ready to scale.",
     icon: <Zap className="w-6 h-6" />,
@@ -111,11 +112,18 @@ const Pricing = () => {
 
               {/* Pricing Section */}
               <div className="mb-6">
-                <div className="flex items-baseline gap-2">
-                  <span className="text-5xl md:text-6xl font-display font-medium text-white tracking-tight">
-                    {plan.price}
-                  </span>
-                  <span className="text-lg opacity-40 font-body">{plan.period}</span>
+                <div className="flex flex-col">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-5xl md:text-6xl font-display font-medium text-white tracking-tight">
+                      {plan.price}
+                    </span>
+                    <span className="text-lg opacity-40 font-body">{plan.period}</span>
+                  </div>
+                  {plan.originalPrice && (
+                    <span className="text-lg md:text-xl font-display line-through text-white font-medium italic mt-1 tracking-tight">
+                      {plan.originalPrice}
+                    </span>
+                  )}
                 </div>
                 <p className="mt-4 text-white/60 font-body text-base leading-relaxed max-w-[280px]">
                   {plan.description}
@@ -143,7 +151,10 @@ const Pricing = () => {
 
               {/* Action Button */}
               <div className="mt-12">
-                <button
+                <a
+                  href="https://paystack.shop/pay/qgnem3g4a8"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`w-full py-5 rounded-2xl text-sm font-bold tracking-widest uppercase flex items-center justify-center gap-2 transition-all duration-500 border-2 ${
                     plan.primary 
                       ? "bg-white text-black hover:bg-white/90 hover:scale-[1.02]" 
@@ -152,7 +163,7 @@ const Pricing = () => {
                 >
                   {plan.cta}
                   <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-                </button>
+                </a>
               </div>
             </motion.div>
           ))}

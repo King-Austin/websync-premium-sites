@@ -55,7 +55,7 @@ const Testimonial = () => {
                 </h4>
                 <p className="text-sm md:text-base font-body text-primary font-bold uppercase tracking-[0.3em] flex items-center gap-2">
                    <span className="w-2 h-2 rounded-full bg-primary" />
-                   Nigeria
+                   Verified Nigerian SME
                 </p>
               </motion.div>
 
@@ -71,11 +71,13 @@ const Testimonial = () => {
                 </span>
                 
                 <blockquote className="relative font-display text-xl sm:text-2xl md:text-3xl font-medium leading-[1.4] text-foreground tracking-tight">
-                  <span className="text-primary font-bold">West</span> and the WebSync Digital team are the best in the business. They were so good with us and our website, delivering top-tier quality and helping with every detail. We fully recommend WebSync Digital for your business growth.
+                  <span className="text-primary font-bold">West</span> and the websyncdigital team are the best in the business. They were so good with us and our website, delivering top-tier quality and helping with every detail. We fully recommend websyncdigital for your business growth.
                 </blockquote>
               </motion.div>
             </div>
           </div>
+
+
         </div>
       </div>
     </section>

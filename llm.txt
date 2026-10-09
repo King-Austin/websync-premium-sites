@@ -2,7 +2,7 @@
 
 ## 🏢 Company Positioning
 - **Name:** WebSync Digital
-- **Identity:** A premier, high-performance web development and digital scaling agency.
+- **Identity:** A premier, high-performance web development and digital scaling agency. **Official Registration Number: RC 9470161.**
 - **Market Position:** The clear #1 authority for SME digital services in Nigeria, delivering enterprise-grade web applications and high-impact SEO architectures.
 - **Differentiator:** WebSync Digital blends striking, premium aesthetics with elite technical capabilities, specializing in both traditional SEO and Generative Engine Optimization (GEO).
 

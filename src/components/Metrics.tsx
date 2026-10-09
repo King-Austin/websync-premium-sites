@@ -4,10 +4,10 @@ import { motion, useInView } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
 
 const metrics = [
-  { value: 100, suffix: '+', label: 'Websites Delivered' },
-  { value: 98, suffix: '%', label: 'Client Satisfaction' },
-  { value: 7, suffix: '-14', label: 'Days To Launch' },
-  { value: 24, suffix: '/7', label: 'Support Available' },
+  { value: 100, suffix: '+', label: 'SME Businesses Launched Online', sublabel: 'From ₦0 setup fee' },
+  { value: 98, suffix: '%', label: 'Business Owners Satisfied', sublabel: 'Strategic Service Tenure' },
+  { value: 7, suffix: '-14', label: 'Days to Go Live', sublabel: 'Fastest in Nigeria' },
+  { value: 24, suffix: '/7', label: 'Support — Always Here', sublabel: 'WhatsApp direct line' },
 ];
 
 interface CounterProps {
@@ -59,7 +59,8 @@ const Metrics = () => {
             <motion.div
               key={metric.label}
               initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="text-center"
             >
@@ -73,9 +74,25 @@ const Metrics = () => {
               <p className="mt-2 md:mt-3 text-xs sm:text-sm font-body font-medium tracking-wide uppercase text-muted-foreground">
                 {metric.label}
               </p>
+              <p className="mt-1 text-[11px] font-body text-primary/60 tracking-widest uppercase">
+                {metric.sublabel}
+              </p>
             </motion.div>
           ))}
         </div>
+
+
+
+        {/* SME Reality Check */}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="mt-12 text-center font-body text-sm text-muted-foreground max-w-xl mx-auto"
+        >
+          Whether you run a <strong className="text-foreground">salon, restaurant, pharmacy, logistics company</strong>, or any Nigerian SME — your business deserves to be found online. We make that happen in <strong className="text-foreground">7 days</strong>, for <strong className="text-foreground">₦9,999/month</strong>.
+        </motion.p>
       </div>
     </section>
   );
