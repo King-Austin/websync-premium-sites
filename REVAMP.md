@@ -20,3 +20,9 @@ The existing subscription starts at NGN 9,999/month, with the existing 36-month 
 ## Deployment
 
 This change does not merge master or promote a production deployment. A preview for the King-Austin fork was created in the connected WebSync Vercel project. See pull request #2 for its current status and review URL. The live custom domains remain on their existing production deployment.
+
+## Reference alignment pass
+
+The second pass follows the reference composition and geometry: 1480px containers, 60px desktop / 36px mobile hero typography, pill controls, a dotted device stage with floating dark panels, benefit/client marquees, eight keyboard-accessible service tabs, integration bands, a 19-project horizontal showcase, a numbered process and a searchable two-column FAQ. The footer includes contact actions, copyable email, Lagos-time clock, service/company/legal navigation and an outlined WebSync wordmark.
+
+The visual shell also covers About, Contact, Pricing, Work, the journal and article pages, the founder profile and existing legal pages. Added eight service-detail routes and a startups/product-build page. Existing policy and article body content is retained. The contact brief prepares a WhatsApp message for the visitor to review and send; it does not pretend to store an enquiry. No newsletter subscription or Happidev-specific guarantees are represented as WebSync services.

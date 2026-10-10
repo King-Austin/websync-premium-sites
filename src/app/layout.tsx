@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 import "../index.css";
 import "../revamp.css";
+import "../alignment.css";
 
 
 export const metadata: Metadata = {

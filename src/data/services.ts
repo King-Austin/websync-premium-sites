@@ -1,0 +1,108 @@
+export const services = [
+  {
+    slug: "landing-page",
+    name: "Landing Page",
+    group: "Web development",
+    intro: "One focused page for your next campaign, product or launch.",
+    features: [
+      "Responsive page design",
+      "Clear enquiry journey",
+      "Contact or lead capture",
+      "Search engine foundations",
+    ],
+    audience: "Campaigns, product launches and focused offers",
+  },
+  {
+    slug: "business-website",
+    name: "Business Website",
+    group: "Web development",
+    intro: "A clear online home for your business, services and story.",
+    features: [
+      "Agreed multi-page scope",
+      "Mobile-first layouts",
+      "Contact and WhatsApp enquiries",
+      "Managed hosting and website care",
+    ],
+    audience: "Businesses that need a professional online presence",
+  },
+  {
+    slug: "e-commerce",
+    name: "E-commerce Store",
+    group: "Online commerce",
+    intro:
+      "Help customers browse your products and take the next step towards an order.",
+    features: [
+      "Product catalogue",
+      "Ordering workflow",
+      "Payment integration by scope",
+      "Store management tools",
+    ],
+    audience: "Retailers, product businesses and online stores",
+  },
+  {
+    slug: "web-app",
+    name: "Web Application",
+    group: "Business software",
+    intro: "Bring your team, data and everyday workflows into one workspace.",
+    features: [
+      "User roles and access",
+      "Dashboards and reporting",
+      "Database and API workflows",
+      "Integrations agreed in the proposal",
+    ],
+    audience: "Teams managing bookings, operations or customer data",
+  },
+  {
+    slug: "integrations",
+    name: "Integrations",
+    group: "Connected workflows",
+    intro: "Connect your website to the tools your business relies on.",
+    features: [
+      "Payment provider connections",
+      "WhatsApp enquiry journeys",
+      "Analytics and reporting setup",
+      "API connections scoped to your needs",
+    ],
+    audience: "Businesses bringing separate tools into one process",
+  },
+  {
+    slug: "website-migration",
+    name: "Website Migration",
+    group: "Web development",
+    intro: "Move from an outdated website to a platform you can build on.",
+    features: [
+      "Existing website audit",
+      "Content and URL mapping",
+      "Redirect and metadata planning",
+      "Launch checks and handover",
+    ],
+    audience: "Businesses replacing or moving an existing website",
+  },
+  {
+    slug: "seo-optimization",
+    name: "SEO Setup",
+    group: "Search visibility",
+    intro: "Give search engines a clearer view of your pages and content.",
+    features: [
+      "Metadata and page structure",
+      "Technical search foundations",
+      "Sitemap and indexing checks",
+      "Performance improvements by scope",
+    ],
+    audience: "Businesses improving discoverability and page quality",
+  },
+  {
+    slug: "website-care",
+    name: "Website Care",
+    group: "Ongoing support",
+    intro: "Keep your website useful, current and supported after launch.",
+    features: [
+      "Text and image updates",
+      "Minor layout adjustments",
+      "Managed technical care",
+      "Direct support on WhatsApp",
+    ],
+    audience: "Businesses that want one team to look after their website",
+  },
+] as const;
+export type Service = (typeof services)[number];

@@ -1,4 +1,4 @@
-import Reveal from "@/components/revamp/Reveal";
+import Shell from "@/components/revamp/Shell";
 import type { Metadata } from "next";
 import Header from "@/components/revamp/Header";
 import Footer from "@/components/revamp/Footer";
@@ -11,30 +11,25 @@ export const metadata: Metadata = {
 };
 export default function Work() {
   return (
-    <div className="ws-site">
-      <Header />
-      <Reveal />
-      <main id="main-content">
-        <section className="ws-section ws-container ws-page-intro">
-          <span className="ws-eyebrow">OUR WORK</span>
-          <h1>
-            Different businesses.
-            <br />
-            <em>One thoughtful approach.</em>
-          </h1>
-          <p>
-            19 websites built around what each business needs to communicate.
-            Filter the collection and visit the live projects.
-          </p>
-        </section>
-        <section
-          className="ws-container ws-section ws-work-collection"
-          aria-label="Client project collection"
-        >
-          <Portfolio />
-        </section>
-      </main>
-      <Footer />
-    </div>
+    <Shell>
+      <section className="ws-section ws-container ws-page-intro">
+        <span className="ws-eyebrow">OUR WORK</span>
+        <h1>
+          Different businesses.
+          <br />
+          <em>One thoughtful approach.</em>
+        </h1>
+        <p>
+          19 websites built around what each business needs to communicate.
+          Filter the collection and visit the live projects.
+        </p>
+      </section>
+      <section
+        className="ws-container ws-section ws-work-collection"
+        aria-label="Client project collection"
+      >
+        <Portfolio />
+      </section>
+    </Shell>
   );
 }
