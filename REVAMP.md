@@ -19,4 +19,4 @@ The existing subscription starts at NGN 9,999/month, with the existing 36-month 
 
 ## Deployment
 
-This change does not merge master or promote a production deployment. The connected Vercel project belongs to the WebSync account; a preview for the King-Austin fork has not yet been verified.
+This change does not merge master or promote a production deployment. A preview for the King-Austin fork was created in the connected WebSync Vercel project. See pull request #2 for its current status and review URL. The live custom domains remain on their existing production deployment.
