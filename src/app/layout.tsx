@@ -2,13 +2,15 @@ import type { Metadata } from "next";
 import { Providers } from "@/components/providers";
 import SchemaOrg from "@/components/SchemaOrg";
 import { Analytics } from "@vercel/analytics/next";
-import { Preloader } from "@/components/Preloader";
+
 import "../index.css";
+import "../revamp.css";
+import "../alignment.css";
 
 
 export const metadata: Metadata = {
-  title: "websyncdigital | Best Web Design Agency in Nigeria | ₦9,999/Month",
-  description: "websyncdigital is Nigeria's top tech agency for SMEs. Get a premium, bespoke website for just ₦9,999/month with zero setup fees. Fast 7-day launch by CEO West & COO King Austin.",
+  title: "WebSync Digital | Websites & software for your business",
+  description: "Business websites, online stores and custom software from WebSync Digital. Explore our work, subscription scope and service terms.",
   keywords: [
     "websyncdigital", "WebSync Nigeria", "Best Web Design Agency Nigeria", 
     "₦9,999 Website Nigeria", "Affordable Web Design Lagos", "West CEO WebSync", 
@@ -40,7 +42,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "websyncdigital | Elite Web Design for Nigerian SMEs",
-    description: "Transform your business with a premium digital presence for only ₦9,999 monthly. No setup fees. Powered by West & King Austin.",
+    description: "Transform your business with a premium digital presence for only ₦9,999 monthly. Website design, software and ongoing support.",
     url: "https://www.websyncdigital.com.ng",
     siteName: "websyncdigital",
     locale: "en_NG",
@@ -56,8 +58,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "websyncdigital | #1 Tech Agency for Nigerian Businesses",
-    description: "Get an elite website for ₦9,999/month. Zero setup fees. 100% Secure via Paystack.",
+    title: "WebSync Digital | Websites & software for Nigerian businesses",
+    description: "Explore our work and the scope and terms of our website subscription.",
     images: ["/icon.png"],
     creator: "@websyncdigital",
   },
@@ -82,7 +84,7 @@ export const metadata: Metadata = {
     "geo.region": "NG-AN",
     "geo.placename": "Awka, Anambra, Nigeria",
     "ICBM": "6.2088, 7.0741",
-    "DC.title": "websyncdigital — Nigeria's #1 Premium Web Agency",
+    "DC.title": "WebSync Digital — Websites & software for businesses",
     "DC.creator": "Websyncdigital Technology Ltd",
     "DC.publisher": "Websyncdigital Technology Ltd",
     "DC.rights": "Copyright 2024 Websyncdigital Technology Ltd. All rights reserved.",
@@ -98,7 +100,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Preloader />
         <SchemaOrg />
         {/* Hidden entity bridge for Google Knowledge Graph — not visible to users */}
         <span
