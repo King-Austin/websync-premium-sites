@@ -21,17 +21,8 @@ RC 9470161 | Websyncdigital Technology Ltd | Fully Registered Legal Entity`;
         "color: gray; font-size: 12px;"
       );
 
-      // Aggressive Source Protection: Debugger Trap
-      // This will pause the thread constantly if DevTools is open, making Source inspection nearly impossible.
-      const sourceGuard = () => {
-        setInterval(() => {
-          (function() { 
-            return false;
-          }["constructor"]("debugger")());
-        }, 100);
-      };
-      sourceGuard();
-      
+      // Keep the console notice without a repeating debugger timer.
+
       // Prevent standard right-click on sensitive images
       const handleContextMenu = (e: MouseEvent) => {
         const target = e.target as HTMLElement;
