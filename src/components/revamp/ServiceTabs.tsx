@@ -4,6 +4,12 @@ import Link from "next/link";
 import { Check, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { services } from "@/data/services";
 import ServiceArt from "./ServiceArt";
+function scrollBehavior(): ScrollBehavior {
+  return typeof window.matchMedia === "function" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ? "auto"
+    : "smooth";
+}
 export default function ServiceTabs() {
   const [active, setActive] = useState(0);
   const list = useRef<HTMLDivElement>(null);
@@ -15,7 +21,7 @@ export default function ServiceTabs() {
     button?.scrollIntoView({
       block: "nearest",
       inline: "nearest",
-      behavior: "smooth",
+      behavior: scrollBehavior(),
     });
     if (focus) button?.focus();
   }
@@ -25,7 +31,7 @@ export default function ServiceTabs() {
         <button
           aria-label="Scroll services left"
           onClick={() =>
-            list.current?.scrollBy({ left: -300, behavior: "smooth" })
+            list.current?.scrollBy({ left: -300, behavior: scrollBehavior() })
           }
         >
           <ChevronLeft size={18} />
@@ -57,7 +63,7 @@ export default function ServiceTabs() {
                 select(next, true);
               }}
             >
-              <span>↗</span>
+              <span aria-hidden="true">↗</span>
               {item.name}
             </button>
           ))}
@@ -65,7 +71,7 @@ export default function ServiceTabs() {
         <button
           aria-label="Scroll services right"
           onClick={() =>
-            list.current?.scrollBy({ left: 300, behavior: "smooth" })
+            list.current?.scrollBy({ left: 300, behavior: scrollBehavior() })
           }
         >
           <ChevronRight size={18} />
