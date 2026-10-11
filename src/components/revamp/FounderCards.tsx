@@ -3,34 +3,37 @@ import Link from "next/link";
 import { ArrowUpRight, Linkedin, Globe } from "lucide-react";
 export default function FounderCards() {
   return (
-    <div className="ha-founders ha-founders-compact">
+    <div className="ha-founders ha-founders-round">
       {[
         {
           name: "West Taylor",
           role: "CEO & Founder",
           image: "/assets/west_profile_updated.jpg",
           profile: "/west",
+          bio: "Leads WebSync’s vision and product direction. Turns business needs into digital experiences.",
         },
         {
           name: "King Austin",
           role: "COO & Co-Founder",
           image: "/assets/king-austin-new.jpg",
           profile: "/king-austin",
+          bio: "Builds backend systems and business software. Leads technical delivery and operations.",
         },
       ].map((person) => (
         <article key={person.name}>
           <Image
             src={person.image}
             alt={person.name}
-            width={240}
-            height={280}
-            sizes="(max-width: 600px) 110px, 180px"
+            width={180}
+            height={180}
+            sizes="(max-width: 600px) 120px, 160px"
           />
           <div>
             <h3>{person.name}</h3>
             <span>{person.role}</span>
+            <p className="ha-founder-bio">{person.bio.split(". ")[0]}.<br />{person.bio.split(". ")[1]}</p>
             <Link href={person.profile} className="ws-text-link">
-              Meet {person.name.split(" ")[0]} <ArrowUpRight size={15} />
+              View more <span className="sr-only">about {person.name}</span> <ArrowUpRight size={15} />
             </Link>
             {person.name === "King Austin" && (
               <div className="ha-founder-socials">
