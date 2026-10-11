@@ -60,9 +60,11 @@ export default function Header() {
     update();
     window.addEventListener("scroll", schedule, { passive: true });
     window.addEventListener("resize", schedule);
+    document.addEventListener("animationend", schedule);
     return () => {
       window.removeEventListener("scroll", schedule);
       window.removeEventListener("resize", schedule);
+      document.removeEventListener("animationend", schedule);
       window.cancelAnimationFrame(frame);
     };
   }, [path]);
