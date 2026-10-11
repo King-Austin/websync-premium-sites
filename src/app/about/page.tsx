@@ -1,5 +1,5 @@
+import FounderCards from "@/components/revamp/FounderCards";
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import Shell from "@/components/revamp/Shell";
 import { Heading, FinalCTA, Quality } from "@/components/revamp/Sections";
@@ -49,33 +49,7 @@ export default function About() {
           title="A team you can work with."
           copy="Design, technical delivery and business operations, connected around the same project."
         />
-        <div className="ha-founders">
-          {[
-            [
-              "West Taylor",
-              "CEO & Founder",
-              "/assets/west_profile_updated.jpg",
-              "/west",
-            ],
-            [
-              "King Austin",
-              "COO & Co-Founder",
-              "/assets/king-austin-new.jpg",
-              "https://www.nworahebuka.nworahsoft.codes/",
-            ],
-          ].map(([n, r, img, h]) => (
-            <article key={n}>
-              <Image src={img} alt={n} width={540} height={600} />
-              <div>
-                <h3>{n}</h3>
-                <span>{r}</span>
-                <a href={h} className="ws-text-link">
-                  View profile ↗
-                </a>
-              </div>
-            </article>
-          ))}
-        </div>
+        <FounderCards />
       </section>
       <Quality />
       <FinalCTA />

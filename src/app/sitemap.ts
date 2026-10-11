@@ -58,6 +58,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
 
+    {
+      url: `${baseUrl}/king-austin`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.85,
+      images: [`${baseUrl}/assets/king-austin-new.jpg`],
+    },
     // ── Tier 3: Authority pages
     {
       url: escapeUrl(`${baseUrl}/west`),

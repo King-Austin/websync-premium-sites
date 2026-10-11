@@ -9,6 +9,8 @@ import {
 import ServiceTabs from "./ServiceTabs";
 import FAQ from "./FAQ";
 import Portfolio from "./Portfolio";
+import { services } from "@/data/services";
+import CustomPricing from "./CustomPricing";
 import Header from "./Header";
 import ContactBrief from "./ContactBrief";
 import Footer from "./Footer";
@@ -17,7 +19,7 @@ describe("WebSync marketing interactions", () => {
   it("switches service content with pointer and keyboard, wrapping at the ends", () => {
     render(<ServiceTabs />);
     const tabs = screen.getAllByRole("tab");
-    expect(tabs).toHaveLength(8);
+    expect(tabs).toHaveLength(services.length);
     fireEvent.click(screen.getByRole("tab", { name: /Web Application/ }));
     expect(screen.getByRole("tabpanel")).toHaveAccessibleName(
       "Web Application",
@@ -129,9 +131,11 @@ describe("WebSync marketing interactions", () => {
     }));
     const nav = screen.getByRole("navigation", { name: "Main navigation" });
     fireEvent.scroll(window);
-    await waitFor(() => expect(
-      within(nav).getByRole("link", { name: "Home", exact: true }),
-    ).toHaveAttribute("aria-current", "location"));
+    await waitFor(() =>
+      expect(
+        within(nav).getByRole("link", { name: "Home", exact: true }),
+      ).toHaveAttribute("aria-current", "location"),
+    );
     sectionTop = 20;
     fireEvent.scroll(window);
     await waitFor(() =>
@@ -150,6 +154,20 @@ describe("WebSync marketing interactions", () => {
       ).toHaveAttribute("aria-current", "location"),
     );
     unmount();
+  });
+  it("updates all custom price tiers when switching from websites to mobile apps", () => {
+    render(<CustomPricing />);
+    expect(screen.getByText("₦400,000")).toBeInTheDocument();
+    expect(screen.getByText("₦650,000")).toBeInTheDocument();
+    fireEvent.change(screen.getByLabelText("Choose your custom service"), {
+      target: { value: "mobile-app" },
+    });
+    expect(screen.getByText("₦250,000")).toBeInTheDocument();
+    expect(screen.getByText("₦1,000,000")).toBeInTheDocument();
+    expect(screen.queryByText("₦650,000")).not.toBeInTheDocument();
+    expect(
+      screen.getByText(/This is not an extra fee on the SME subscription/),
+    ).toBeInTheDocument();
   });
   it("prepares a WhatsApp brief without sending a message or pretending to store the enquiry", () => {
     render(<ContactBrief />);

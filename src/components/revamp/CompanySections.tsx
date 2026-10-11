@@ -1,3 +1,4 @@
+import FounderCards from "@/components/revamp/FounderCards";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ShieldCheck } from "lucide-react";
@@ -13,33 +14,7 @@ export default function CompanySections() {
             title="The people behind your next project."
             copy="Meet the team leading WebSync Digital, from the first conversation to design, delivery and ongoing support."
           />
-          <div className="ha-founders">
-            {[
-              [
-                "West Taylor",
-                "CEO & Founder",
-                "/assets/west_profile_updated.jpg",
-                "/west",
-              ],
-              [
-                "King Austin",
-                "COO & Co-Founder",
-                "/assets/king-austin-new.jpg",
-                "https://www.nworahebuka.nworahsoft.codes/",
-              ],
-            ].map(([name, role, image, href]) => (
-              <article key={name}>
-                <Image src={image} alt={name} width={540} height={600} />
-                <div>
-                  <h3>{name}</h3>
-                  <span>{role}</span>
-                  <a href={href} className="ws-text-link">
-                    View profile ↗
-                  </a>
-                </div>
-              </article>
-            ))}
-          </div>
+          <FounderCards />
           <div className="ha-section-link">
             <Link href="/about" className="ws-button ws-button-outline">
               More about WebSync <ArrowRight size={17} />

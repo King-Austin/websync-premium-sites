@@ -53,6 +53,20 @@ export const services = [
     audience: "Teams managing bookings, operations or customer data",
   },
   {
+    slug: "mobile-app",
+    name: "Mobile App",
+    group: "Product development",
+    intro:
+      "Bring your product to customers on Android and iOS, with a focused scope and a clear release plan.",
+    features: [
+      "Core mobile screens and user journeys",
+      "Accounts and backend integration by scope",
+      "Android and iOS release planning",
+      "Store submission support by agreement",
+    ],
+    audience: "Founders and businesses building a mobile product",
+  },
+  {
     slug: "integrations",
     name: "Integrations",
     group: "Connected workflows",

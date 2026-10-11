@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 };
 export default function Home() {
   return (
-    <Shell>
+    <Shell grid={false}>
       <section className="ha-hero">
         <div className="ws-container ha-hero-grid">
           <div className="ha-hero-copy">

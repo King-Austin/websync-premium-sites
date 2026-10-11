@@ -10,7 +10,7 @@ export default function ServiceArt({
 }: {
   kind?: string;
 }) {
-  const software = kind === "web-app";
+  const software = kind === "web-app" || kind === "mobile-app";
   const care = kind === "website-care";
   const seo = kind === "seo-optimization";
   const migration = kind === "website-migration";

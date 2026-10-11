@@ -89,6 +89,7 @@ export default function Footer() {
               ["Pricing", "/pricing"],
               ["Startups", "/startups"],
               ["About", "/about"],
+              ["King Austin", "/king-austin"],
               ["Contact", "/contact"],
               ["Journal", "/blog"],
             ].map(([t, h]) => (

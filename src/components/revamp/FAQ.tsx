@@ -6,7 +6,7 @@ const answers = [
   {
     q: "How much does a website cost?",
     category: "Pricing",
-    a: "Our business website subscription starts at ₦9,999 per month with no setup fee. Online stores, custom software and larger builds receive a separate written quote based on their scope.",
+    a: "Our business website subscription starts at ₦9,999 per month with no setup fee. Client-owned custom builds use separate development pricing: landing pages from ₦150,000, business websites from ₦400,000 and web applications from ₦1,500,000. The written proposal confirms scope.",
     link: "/pricing",
     label: "See pricing and scope",
   },
@@ -34,7 +34,7 @@ const answers = [
   {
     q: "What happens after launch?",
     category: "Support",
-    a: "The subscription includes managed hosting and technical care, text changes, image swaps and minor layout updates. Larger features are separately scoped.",
+    a: "The ₦9,999 subscription includes hosting on WebSync infrastructure, technical care, text changes, image swaps and minor layout updates, with no separate maintenance retainer. No migration is needed while you remain on our infrastructure. Larger features and independently hosted custom builds are separately scoped.",
     link: "/services/website-care",
     label: "Explore website care",
   },

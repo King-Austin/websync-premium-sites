@@ -1,10 +1,9 @@
+import CustomPricing from "@/components/revamp/CustomPricing";
 import Shell from "@/components/revamp/Shell";
 import PriceGauge from "@/components/revamp/PriceGauge";
 import ServiceTabs from "@/components/revamp/ServiceTabs";
 import { Heading, FinalCTA } from "@/components/revamp/Sections";
 import type { Metadata } from "next";
-import Header from "@/components/revamp/Header";
-import Footer from "@/components/revamp/Footer";
 import Pricing from "@/components/revamp/Pricing";
 import FAQ from "@/components/revamp/FAQ";
 export const metadata: Metadata = {
@@ -72,6 +71,14 @@ export default function PricingPage() {
         className="ws-section ws-container ws-work-collection"
       >
         <Pricing />
+      </section>
+      <section className="ws-section ws-container" id="custom-plans">
+        <Heading
+          label="CUSTOM DEVELOPMENT & OWNERSHIP"
+          title="Choose the scope. Own the build."
+          copy="For clients who need independent hosting, deployment and source-code ownership. Select a service to compare development prices."
+        />
+        <CustomPricing />
       </section>
       <section className="ws-section ws-container">
         <div>
