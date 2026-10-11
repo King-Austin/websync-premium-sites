@@ -3567,3 +3567,47 @@
 .ha-footer-products small { display:block; font-size:11px; color:#78808e; margin-top:3px; }
 @media (max-width:900px) { .ha-founders-round { grid-template-columns:1fr; max-width:620px; } }
 @media (max-width:600px) { .ha-founders-round { padding:0; gap:14px; } .ha-founders-round article { padding:20px; gap:16px; } .ha-founders-round img { width:72px; height:72px; } .ha-founders-round h3 { font-size:22px; } }
+
+/* Complete navigation remains visible on desktop within the floating pill. */
+.ha-site .ws-nav { max-width:1320px; gap:14px; }
+.ha-site .ws-desktop-nav { gap:0; }
+.ha-site .ws-desktop-nav > a { padding:12px 10px; font-size:13px; }
+.ha-header-actions { gap:14px; }
+.ha-site .ha-signin { display:block; font-size:12px; }
+@media (max-width:1199px) { .ha-site .ws-desktop-nav { display:none; } .ha-site .ws-menu-button { display:grid; border-radius:50%; background:#edf2ff; border:0; } }
+@media (max-width:600px) { .ha-site .ha-signin { display:none; } .ha-header-actions { gap:6px; } }
+
+/* Motion adds depth without changing the dimensions of content. */
+.ha-metric-one { animation-delay:-1s; }
+.ha-metric-two { animation-delay:-3s; }
+.ha-metric-three { animation-delay:-5s; }
+.ha-device-chart path { stroke-dasharray:280; animation:ha-chart-trace 8s ease-in-out infinite; }
+.ha-bars i { transform-origin:bottom; animation:ha-bar-rise 5s ease-in-out infinite; }
+.ha-bars i:nth-child(2) { animation-delay:-.7s; }
+.ha-bars i:nth-child(3) { animation-delay:-1.4s; }
+.ha-bars i:nth-child(4) { animation-delay:-2.1s; }
+.ha-bars i:nth-child(5) { animation-delay:-2.8s; }
+@keyframes ha-chart-trace { 0%,100% { stroke-dashoffset:0; } 50% { stroke-dashoffset:80; } }
+@keyframes ha-bar-rise { 0%,100% { transform:scaleY(1); } 50% { transform:scaleY(.65); } }
+.ha-price-gauge { isolation:isolate; }
+.ha-gauge-orbits { position:absolute; width:145%; aspect-ratio:1; left:-22.5%; top:-22.5%; z-index:-1; pointer-events:none; }
+.ha-gauge-orbits i { position:absolute; inset:0; border:1px solid #265df030; border-radius:50%; }
+.ha-gauge-orbits i:nth-child(2) { inset:9%; border-style:dashed; animation:ha-orbit-turn 60s linear infinite; }
+.ha-gauge-orbits i:nth-child(3) { inset:19%; }
+.ha-gauge-orbits > span { position:absolute; inset:0; border-radius:50%; animation:ha-orbit-turn 36s linear infinite; }
+.ha-gauge-orbits > span:before { content:""; width:10px; height:10px; border-radius:50%; background:#265df0; position:absolute; top:0; left:50%; box-shadow:0 0 0 6px #265df011; }
+.ha-gauge-needle { transform-origin:150px 150px; animation:ha-needle-sweep 7s ease-in-out infinite; }
+@keyframes ha-orbit-turn { to { transform:rotate(360deg); } }
+@keyframes ha-needle-sweep { 0%,100% { transform:rotate(-8deg); } 50% { transform:rotate(12deg); } }
+.ha-footer-finale { position:relative; isolation:isolate; overflow:hidden; padding:90px 0 28px; border-radius:28px 28px 0 0; }
+.ha-footer-orbits { position:absolute; width:min(120vw,1400px); aspect-ratio:1; top:100%; left:50%; transform:translate(-50%,-50%); z-index:-1; pointer-events:none; }
+.ha-footer-orbits i { position:absolute; inset:0; border:1px solid #265df0; border-radius:50%; animation:ha-radiate 12s linear infinite; }
+.ha-footer-orbits i:nth-child(even) { border-style:dashed; }
+@keyframes ha-radiate { 0% { transform:scale(.15); opacity:0; } 15% { opacity:.18; } 85% { opacity:.13; } 100% { transform:scale(1.15); opacity:0; } }
+.ha-footer-emblem { position:absolute; top:12px; left:50%; transform:translateX(-50%); display:flex; align-items:center; justify-content:center; width:58px; height:58px; border-radius:50%; color:#265df0; background:#fff; border:1px solid #dce5ff; font:700 26px Fraunces,serif; box-shadow:0 8px 25px #265df011; }
+.ha-footer-emblem span { font:500 14px sans-serif; }
+.ha-footer-finale .ha-wordmark { margin:0; position:relative; z-index:1; }
+.ha-motion-toggle { display:flex; align-items:center; justify-content:center; gap:8px; margin:0 auto; min-height:44px; padding:10px 14px; color:#657086; font-size:11px; }
+html[data-motion="paused"] .ha-site *, html[data-motion="paused"] .ha-site *:before, html[data-motion="paused"] .ha-site *:after { animation-play-state:paused !important; }
+@media (max-width:600px) { .ha-footer-finale { padding-top:70px; } .ha-footer-orbits { width:170vw; } .ha-footer-emblem { width:46px; height:46px; font-size:22px; } .ha-gauge-orbits { width:125%; left:-12.5%; top:-12.5%; } }
+@media (prefers-reduced-motion:reduce) { .ha-device-chart path,.ha-bars i,.ha-gauge-needle,.ha-gauge-orbits i,.ha-gauge-orbits > span,.ha-footer-orbits i { animation:none !important; } .ha-footer-orbits i { transform:scale(.8); opacity:.12; } .ha-footer-orbits i:nth-child(2) { transform:scale(.6); } .ha-footer-orbits i:nth-child(3) { transform:scale(.4); } .ha-footer-orbits i:nth-child(4) { transform:scale(.2); } .ha-motion-toggle { display:none; } }

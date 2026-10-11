@@ -2,10 +2,17 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { ArrowUp, Copy, Check, MessageCircle } from "lucide-react";
+import { ArrowUp, Copy, Check, MessageCircle, Pause, Play } from "lucide-react";
 import { services } from "@/data/services";
 import { enquiryUrl } from "@/data/projects";
 export default function Footer() {
+  const [motionPaused, setMotionPaused] = useState(false);
+  useEffect(() => { setMotionPaused(document.documentElement.dataset.motion === "paused"); }, []);
+  function toggleMotion() {
+    const paused = document.documentElement.dataset.motion !== "paused";
+    document.documentElement.dataset.motion = paused ? "paused" : "running";
+    setMotionPaused(paused);
+  }
   const [copied, setCopied] = useState(false);
   const [clock, setClock] = useState("");
   useEffect(() => {
@@ -127,9 +134,17 @@ export default function Footer() {
             <ArrowUp size={20} />
           </a>
         </div>
-        <div className="ha-wordmark" aria-hidden="true">
-          websync<span>↗</span>
+        <div className="ha-footer-finale">
+          <div className="ha-footer-orbits" aria-hidden="true">
+            {[0, 1, 2, 3, 4].map((ring) => <i key={ring} style={{ animationDelay: `${-ring * 2.4}s` }} />)}
+          </div>
+          <div className="ha-footer-emblem" aria-hidden="true">W<span>↗</span></div>
+          <div className="ha-wordmark" aria-hidden="true">websync<span>↗</span></div>
         </div>
+        <button className="ha-motion-toggle" onClick={toggleMotion} aria-pressed={motionPaused}>
+          {motionPaused ? <Play size={14} /> : <Pause size={14} />}
+          {motionPaused ? "Resume visual motion" : "Pause visual motion"}
+        </button>
       </div>
     </footer>
   );

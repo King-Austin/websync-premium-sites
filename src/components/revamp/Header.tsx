@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { Menu, X, CalendarDays, ChevronDown } from "lucide-react";
+import { Menu, X, CalendarDays } from "lucide-react";
 const links = [
   ["Home", "/"],
   ["Services", "/#services"],
@@ -18,7 +18,6 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("Home");
   const path = usePathname();
-  const moreMenu = useRef<HTMLDetailsElement>(null);
   const menuButton = useRef<HTMLButtonElement>(null);
   const mobileNav = useRef<HTMLElement>(null);
   const homeSections: Record<string, string> = {
@@ -32,7 +31,6 @@ export default function Header() {
   ]);
   useEffect(() => {
     setOpen(false);
-    if (moreMenu.current) moreMenu.current.open = false;
   }, [path]);
   useEffect(() => {
     if (open) mobileNav.current?.querySelector<HTMLAnchorElement>("a")?.focus();
@@ -99,10 +97,9 @@ export default function Header() {
             className="ws-logo"
             priority
           />
-          <span>HUB</span>
         </Link>
         <nav className="ws-desktop-nav" aria-label="Main navigation">
-          {navLinks.filter(([label]) => ["Services", "Our work", "Pricing"].includes(label)).map(([label, href]) => (
+          {navLinks.map(([label, href]) => (
             <Link
               key={label}
               href={href}
@@ -111,15 +108,9 @@ export default function Header() {
               {label}
             </Link>
           ))}
-          <details className="ha-nav-more" ref={moreMenu} onKeyDown={(e) => { if (e.key === "Escape" && moreMenu.current) { moreMenu.current.open = false; moreMenu.current.querySelector("summary")?.focus(); } }} >
-            <summary>More <ChevronDown size={14} aria-hidden="true" /></summary>
-            <div className="ha-nav-dropdown">
-              {navLinks.filter(([label]) => ["Home", "Startups", "About", "Contact", "Blog"].includes(label)).map(([label, href]) => <Link key={label} href={href} aria-current={currentLink(label, href)} onClick={() => { if (moreMenu.current) moreMenu.current.open = false; }}>{label}</Link>)}
-              <a href="https://app.websyncdigital.com.ng" target="_blank" rel="noopener noreferrer">Client portal ↗</a>
-            </div>
-          </details>
         </nav>
         <div className="ha-header-actions">
+          <a className="ha-signin" href="https://app.websyncdigital.com.ng" target="_blank" rel="noopener noreferrer">Client portal ↗</a>
           <Link className="ws-button ws-nav-cta" href="/contact#book">
             <CalendarDays size={15} /> Let’s talk
           </Link>

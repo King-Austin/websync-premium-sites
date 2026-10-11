@@ -5,6 +5,7 @@ export default function PriceGauge() {
       role="img"
       aria-label="Website subscription starts at 9,999 naira monthly"
     >
+      <div className="ha-gauge-orbits" aria-hidden="true"><i /><i /><i /><span /></div>
       <div className="ha-gauge-ring">
         <svg className="ha-gauge-svg" viewBox="0 0 300 300" aria-hidden="true">
           <circle cx="150" cy="150" r="137" fill="white" />
@@ -27,6 +28,7 @@ export default function PriceGauge() {
             strokeWidth="9"
             strokeLinecap="round"
           />
+          <g className="ha-gauge-needle">
           <line
             x1="150"
             y1="150"
@@ -36,6 +38,7 @@ export default function PriceGauge() {
             strokeWidth="4"
           />
           <circle cx="225" cy="105" r="6" fill="hsl(221 83% 53%)" />
+          </g>
         </svg>
         <b className="ha-gauge-mark">
           W<span>↗</span>
