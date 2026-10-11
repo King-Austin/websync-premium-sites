@@ -124,10 +124,10 @@
   position: relative;
   padding-block: 8px;
 }
-.ha-site .ws-desktop-nav a[aria-current="page"] {
+.ha-site .ws-desktop-nav a[aria-current] {
   color: var(--ws-blue);
 }
-.ha-site .ws-desktop-nav a[aria-current="page"]:after {
+.ha-site .ws-desktop-nav a[aria-current]:after {
   content: "";
   position: absolute;
   bottom: 1px;
@@ -3006,5 +3006,42 @@
   }
   .ha-client-proof span {
     font-size: 13px;
+  }
+}
+
+/* Small-phone navigation keeps each action within reach. */
+.ha-site .ws-mobile-nav a[aria-current] {
+  color: var(--ws-blue);
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .ha-site .ws-nav {
+    gap: 10px;
+  }
+  .ha-header-actions {
+    gap: 8px;
+  }
+  .ha-site .ws-nav-cta {
+    font-size: 12px;
+    padding: 8px 12px;
+    min-height: 44px;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .ha-site .ws-menu-button {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+  .ha-site .ws-mobile-nav {
+    max-height: calc(100svh - 72px);
+  }
+}
+@media (max-width: 389px) {
+  .ha-site .ws-logo {
+    width: 100px;
+  }
+  .ha-site .ws-nav-cta {
+    padding-inline: 10px;
   }
 }

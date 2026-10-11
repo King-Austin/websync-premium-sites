@@ -16,6 +16,7 @@ const links = [
 ];
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("Home");
   const path = usePathname();
   const menuButton = useRef<HTMLButtonElement>(null);
   const mobileNav = useRef<HTMLElement>(null);
@@ -31,6 +32,47 @@ export default function Header() {
   useEffect(() => {
     if (open) mobileNav.current?.querySelector<HTMLAnchorElement>("a")?.focus();
   }, [open]);
+  useEffect(() => {
+    if (path !== "/") return;
+    let frame = 0;
+    const sections = [
+      ["Services", "services"],
+      ["Our work", "featured"],
+      ["Pricing", "pricing"],
+      ["About", "founders"],
+    ];
+    const update = () => {
+      frame = 0;
+      const threshold =
+        (document.querySelector(".ws-header")?.getBoundingClientRect().height ??
+          80) + 40;
+      let current = "Home";
+      for (const [label, id] of sections) {
+        const section = document.getElementById(id);
+        if (section && section.getBoundingClientRect().top <= threshold)
+          current = label;
+      }
+      setActiveSection(current);
+    };
+    const schedule = () => {
+      if (!frame) frame = window.requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    return () => {
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+      window.cancelAnimationFrame(frame);
+    };
+  }, [path]);
+  function currentLink(
+    label: string,
+    href: string,
+  ): "page" | "location" | undefined {
+    if (path === "/") return label === activeSection ? "location" : undefined;
+    return href === path ? "page" : undefined;
+  }
   function closeMenu(returnFocus = false) {
     setOpen(false);
     if (returnFocus) menuButton.current?.focus();
@@ -57,7 +99,7 @@ export default function Header() {
             <Link
               key={label}
               href={href}
-              aria-current={href === path ? "page" : undefined}
+              aria-current={currentLink(label, href)}
             >
               {label}
             </Link>
@@ -98,7 +140,12 @@ export default function Header() {
           }}
         >
           {navLinks.map(([label, href]) => (
-            <Link key={label} href={href} onClick={() => closeMenu()}>
+            <Link
+              key={label}
+              href={href}
+              aria-current={currentLink(label, href)}
+              onClick={() => closeMenu()}
+            >
               {label}
             </Link>
           ))}

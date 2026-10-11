@@ -1,5 +1,11 @@
 import { describe, it, expect, vi } from "vitest";
-import { render, screen, fireEvent, within } from "@testing-library/react";
+import {
+  render,
+  screen,
+  fireEvent,
+  within,
+  waitFor,
+} from "@testing-library/react";
 import ServiceTabs from "./ServiceTabs";
 import FAQ from "./FAQ";
 import Portfolio from "./Portfolio";
@@ -100,6 +106,50 @@ describe("WebSync marketing interactions", () => {
     expect(
       screen.queryByRole("navigation", { name: "Mobile navigation" }),
     ).not.toBeInTheDocument();
+  });
+  it("highlights the visible homepage section and restores Home near the top", async () => {
+    let sectionTop = 500;
+    const { unmount } = render(
+      <>
+        <Header />
+        <section id="pricing">Pricing section</section>
+      </>,
+    );
+    const section = document.getElementById("pricing")!;
+    vi.spyOn(section, "getBoundingClientRect").mockImplementation(() => ({
+      top: sectionTop,
+      height: 600,
+      bottom: sectionTop + 600,
+      width: 300,
+      left: 0,
+      right: 300,
+      x: 0,
+      y: sectionTop,
+      toJSON: () => ({}),
+    }));
+    const nav = screen.getByRole("navigation", { name: "Main navigation" });
+    fireEvent.scroll(window);
+    await waitFor(() => expect(
+      within(nav).getByRole("link", { name: "Home", exact: true }),
+    ).toHaveAttribute("aria-current", "location"));
+    sectionTop = 100;
+    fireEvent.scroll(window);
+    await waitFor(() =>
+      expect(
+        within(nav).getByRole("link", { name: "Pricing", exact: true }),
+      ).toHaveAttribute("aria-current", "location"),
+    );
+    expect(
+      within(nav).getByRole("link", { name: "Home", exact: true }),
+    ).not.toHaveAttribute("aria-current");
+    sectionTop = 500;
+    fireEvent.scroll(window);
+    await waitFor(() =>
+      expect(
+        within(nav).getByRole("link", { name: "Home", exact: true }),
+      ).toHaveAttribute("aria-current", "location"),
+    );
+    unmount();
   });
   it("prepares a WhatsApp brief without sending a message or pretending to store the enquiry", () => {
     render(<ContactBrief />);
