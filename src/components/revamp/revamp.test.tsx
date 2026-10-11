@@ -132,7 +132,7 @@ describe("WebSync marketing interactions", () => {
     await waitFor(() => expect(
       within(nav).getByRole("link", { name: "Home", exact: true }),
     ).toHaveAttribute("aria-current", "location"));
-    sectionTop = 100;
+    sectionTop = 20;
     fireEvent.scroll(window);
     await waitFor(() =>
       expect(
