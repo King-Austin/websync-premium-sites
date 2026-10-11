@@ -34,3 +34,9 @@ Alignment validation: production build passed; all 19 marketing/service route ch
 The footer wordmark now uses solid WebSync blue, and the hero has visible blue grid lines. The homepage includes both founder profiles, subscription/custom pricing with a link to the full pricing page, and a CAC registration section with an expandable view of the existing redacted certificate. The CAC asset is explicitly included in the deployment file trace and loaded directly in the browser to preserve the existing referrer protection.
 
 The user-reported total is presented as **30+ clients served**, separately from the **19 selected projects** in the portfolio. No additional domains or unsupported customer testimonials were invented. Production build (44 generated routes) and the six existing interaction tests passed. Deployed visual review remains blocked by Vercel Authentication.
+
+## Authenticated navigation review
+
+Vercel sign-in now allows live preview review. The original Services anchor lands at approximately 105px below the viewport top. Founder images and the expandable CAC certificate loaded successfully on the deployment. The browser exposed a sticky-header failure on deep scroll: `overflow-x: hidden` on the body creates an unintended ancestor scroll container. Replaced that rule with `clip`, preserving horizontal clipping without intercepting sticky positioning.
+
+Homepage Work, Pricing and About navigation now targets their homepage sections; detail pages remain available through section CTAs and footer links. The mobile menu focuses its first link when opened, closes after selection, and returns focus to its toggle on Escape. The existing navigation test now checks those behaviors. True mobile viewport visual verification remains pending: the available cloud browser does not expose a viewport resize control.

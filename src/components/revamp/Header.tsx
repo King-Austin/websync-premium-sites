@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, CalendarDays } from "lucide-react";
 const links = [
@@ -17,6 +17,24 @@ const links = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   const path = usePathname();
+  const menuButton = useRef<HTMLButtonElement>(null);
+  const mobileNav = useRef<HTMLElement>(null);
+  const homeSections: Record<string, string> = {
+    "Our work": "#featured",
+    Pricing: "#pricing",
+    About: "#founders",
+  };
+  const navLinks = links.map(([label, href]) => [
+    label,
+    path === "/" ? (homeSections[label] ?? href) : href,
+  ]);
+  useEffect(() => {
+    if (open) mobileNav.current?.querySelector<HTMLAnchorElement>("a")?.focus();
+  }, [open]);
+  function closeMenu(returnFocus = false) {
+    setOpen(false);
+    if (returnFocus) menuButton.current?.focus();
+  }
   return (
     <header className="ws-header">
       <a href="#main-content" className="ws-skip">
@@ -35,7 +53,7 @@ export default function Header() {
           <span>HUB</span>
         </Link>
         <nav className="ws-desktop-nav" aria-label="Main navigation">
-          {links.map(([label, href]) => (
+          {navLinks.map(([label, href]) => (
             <Link
               key={label}
               href={href}
@@ -58,6 +76,7 @@ export default function Header() {
             <CalendarDays size={15} /> Let’s talk
           </Link>
           <button
+            ref={menuButton}
             className="ws-menu-button"
             aria-label={open ? "Close navigation" : "Open navigation"}
             aria-expanded={open}
@@ -70,15 +89,16 @@ export default function Header() {
       </div>
       {open && (
         <nav
+          ref={mobileNav}
           id="ws-mobile-nav"
           className="ws-mobile-nav"
           aria-label="Mobile navigation"
           onKeyDown={(e) => {
-            if (e.key === "Escape") setOpen(false);
+            if (e.key === "Escape") closeMenu(true);
           }}
         >
-          {links.map(([label, href]) => (
-            <Link key={label} href={href} onClick={() => setOpen(false)}>
+          {navLinks.map(([label, href]) => (
+            <Link key={label} href={href} onClick={() => closeMenu()}>
               {label}
             </Link>
           ))}

@@ -84,9 +84,19 @@ describe("WebSync marketing interactions", () => {
     const nav = screen.getByRole("navigation", { name: "Mobile navigation" });
     expect(within(nav).getByRole("link", { name: "About" })).toHaveAttribute(
       "href",
-      "/about",
+      "#founders",
     );
-    fireEvent.click(within(nav).getByRole("link", { name: "About" }));
+    expect(within(nav).getByRole("link", { name: "Home" })).toHaveFocus();
+    fireEvent.keyDown(nav, { key: "Escape" });
+    expect(
+      screen.getByRole("button", { name: "Open navigation" }),
+    ).toHaveFocus();
+    fireEvent.click(screen.getByRole("button", { name: "Open navigation" }));
+    fireEvent.click(
+      within(
+        screen.getByRole("navigation", { name: "Mobile navigation" }),
+      ).getByRole("link", { name: "About" }),
+    );
     expect(
       screen.queryByRole("navigation", { name: "Mobile navigation" }),
     ).not.toBeInTheDocument();
