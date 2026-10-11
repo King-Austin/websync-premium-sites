@@ -132,7 +132,7 @@ const Visionary = () => {
                       </p>
                       <div className="pt-6">
                          <a 
-                           href="https://www.nworahebuka.nworahsoft.codes/" 
+                           href="https://nworahebuka.com.ng/" 
                            target="_blank"
                            rel="noopener noreferrer"
                            className="inline-flex items-center gap-2 group/link text-xs md:text-sm font-bold uppercase tracking-widest text-primary hover:gap-3 transition-all duration-300"

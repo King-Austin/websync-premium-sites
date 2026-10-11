@@ -6,6 +6,11 @@ import type { NextRequest } from 'next/server';
 const rateLimitMap = new Map();
 
 export function middleware(request: NextRequest) {
+  // Link prefetches are background navigation requests, not page visits.
+  if (request.headers.has('next-router-prefetch') || request.headers.get('purpose') === 'prefetch') {
+    return NextResponse.next();
+  }
+
   const forwarded = request.headers.get('x-forwarded-for');
   const ip = forwarded ? forwarded.split(',')[0] : '127.0.0.1';
   const now = Date.now();
@@ -56,6 +61,6 @@ export const config = {
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
      */
-    '/((?!_next/static|_next/image|favicon.ico).*)',
+    '/((?!_next/static|_next/image|favicon.ico|_vercel/|assets/|projects/|fonts/).*)',
   ],
 };
