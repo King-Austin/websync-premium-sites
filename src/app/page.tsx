@@ -7,6 +7,7 @@ import ServiceTabs from "@/components/revamp/ServiceTabs";
 import Portfolio from "@/components/revamp/Portfolio";
 import Pricing from "@/components/revamp/Pricing";
 import CompanySections from "@/components/revamp/CompanySections";
+import VideoSection from "@/components/VideoSection";
 import FAQ from "@/components/revamp/FAQ";
 import {
   Heading,
@@ -133,6 +134,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <VideoSection />
       <CompanySections />
       <Process />
       <Quality />
