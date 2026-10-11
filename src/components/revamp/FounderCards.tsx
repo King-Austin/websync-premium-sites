@@ -10,14 +10,14 @@ export default function FounderCards() {
           role: "CEO & Founder",
           image: "/assets/west_profile_updated.jpg",
           profile: "/west",
-          bio: "Leads WebSync’s vision and product direction. Turns business needs into digital experiences.",
+          bio: "Leads vision and product direction. Turns business needs into digital solutions.",
         },
         {
           name: "King Austin",
           role: "COO & Co-Founder",
           image: "/assets/king-austin-new.jpg",
           profile: "/king-austin",
-          bio: "Builds backend systems and business software. Leads technical delivery and operations.",
+          bio: "Builds backend and business software. Leads technical delivery and operations.",
         },
       ].map((person) => (
         <article key={person.name}>

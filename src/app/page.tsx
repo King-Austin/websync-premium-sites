@@ -7,7 +7,6 @@ import ServiceTabs from "@/components/revamp/ServiceTabs";
 import Portfolio from "@/components/revamp/Portfolio";
 import Pricing from "@/components/revamp/Pricing";
 import CompanySections from "@/components/revamp/CompanySections";
-import Products from "@/components/revamp/Products";
 import FAQ from "@/components/revamp/FAQ";
 import {
   Heading,
@@ -82,7 +81,6 @@ export default function Home() {
         <ServiceTabs />
       </section>
       <Integrations />
-      <Products />
       <section className="ws-section ha-work-home" id="featured">
         <div className="ws-container">
           <Heading

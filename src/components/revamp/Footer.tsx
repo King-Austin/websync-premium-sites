@@ -104,6 +104,11 @@ export default function Footer() {
               <Link href="/privacy">Privacy policy</Link>
               <Link href="/terms">Terms of service</Link>
             </nav>
+            <nav className="ha-footer-products" aria-label="Our products">
+              <h3>Our products</h3>
+              <a href="https://rmis.com.ng/" target="_blank" rel="noopener noreferrer">RMIS <small>Real estate management</small></a>
+              <a href="https://topit.com.ng/" target="_blank" rel="noopener noreferrer">TOPIT <small>Data & utility services</small></a>
+            </nav>
             <div className="ha-footer-journal">
               <h3>The WebSync Journal</h3>
               <p>
