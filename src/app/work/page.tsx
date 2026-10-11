@@ -1,10 +1,8 @@
 import Shell from "@/components/revamp/Shell";
 import type { Metadata } from "next";
-import Header from "@/components/revamp/Header";
-import Footer from "@/components/revamp/Footer";
 import Portfolio from "@/components/revamp/Portfolio";
 export const metadata: Metadata = {
-  title: "Our work | 19 client websites | WebSync Digital",
+  title: "Our work | Websites & products | WebSync Digital",
   description:
     "Explore WebSync Digital client websites across commerce, business services, hospitality, community and software.",
   alternates: { canonical: "/work" },
@@ -20,7 +18,8 @@ export default function Work() {
           <em>One thoughtful approach.</em>
         </h1>
         <p>
-          19 websites built around what each business needs to communicate.
+          54+ clients served, with 20+ selected projects across our broader portfolio.
+          Explore this collection of live websites and software.
           Filter the collection and visit the live projects.
         </p>
       </section>

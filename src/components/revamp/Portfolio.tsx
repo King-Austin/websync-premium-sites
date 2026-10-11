@@ -80,7 +80,7 @@ export default function Portfolio({
                   {String(index + 1).padStart(2, "0")}{" "}
                   <small>/ {visible.length}</small>
                 </span>
-                <b>Client project · {p.sector}</b>
+                <b>{p.slug === "rmis" || p.slug === "topit" ? "WebSync product" : "Client project"} · {p.sector}</b>
               </div>
               <h3>{p.name}</h3>
               <p>{p.description}</p>
@@ -105,7 +105,7 @@ export default function Portfolio({
         ))}
       </div>
       {rail && (
-        <p className="ha-scroll-hint">← Scroll to explore all 19 projects →</p>
+        <p className="ha-scroll-hint">← Scroll to explore {projects.length} live projects →</p>
       )}
     </>
   );

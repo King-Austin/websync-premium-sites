@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Shell from "@/components/revamp/Shell";
+import Products from "@/components/revamp/Products";
 import ServiceArt from "@/components/revamp/ServiceArt";
 import { Heading, Process, FinalCTA } from "@/components/revamp/Sections";
 export const metadata: Metadata = {
@@ -61,6 +62,7 @@ export default function Startups() {
           written proposal.
         </p>
       </section>
+      <Products />
       <Process />
       <FinalCTA />
     </Shell>

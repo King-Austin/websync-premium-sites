@@ -3510,3 +3510,22 @@
     display: none;
   }
 }
+
+/* WebSync-owned products: adoption proof and scope, separate from client work. */
+.ha-products { background-color: #f7f9ff; background-image: linear-gradient(rgba(38,93,240,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(38,93,240,.06) 1px,transparent 1px); background-size:56px 56px; }
+.ha-product-cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+.ha-product-card { display:flex; flex-direction:column; padding:36px; border:1px solid #dfe5f3; border-radius:28px; background:#fff; min-width:0; }
+.ha-product-brand { display:flex; align-items:center; gap:14px; color:#265df0; font-size:11px; letter-spacing:.08em; font-weight:700; }
+.ha-product-card h3 { font-size:clamp(36px,4vw,54px); margin:24px 0 12px; }
+.ha-product-card h4 { font-size:22px; line-height:1.3; margin:0 0 14px; }
+.ha-product-card > p { color:#545a68; line-height:1.7; margin:0; }
+.ha-product-stats { display:flex; flex-wrap:wrap; gap:24px; padding:24px 0; margin:24px 0; border-top:1px solid #e8ecf5; border-bottom:1px solid #e8ecf5; }
+.ha-product-stats > div { display:flex; flex-direction:column-reverse; flex:1; min-width:130px; }
+.ha-product-stats dd { color:#265df0; font-size:40px; font-weight:700; line-height:1.1; margin:0 0 8px; }
+.ha-product-stats dt { font-size:13px; color:#545a68; line-height:1.5; }
+.ha-product-features { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); list-style:none; padding:0; margin:0 0 28px; gap:18px; }
+.ha-product-features li { display:flex; align-items:flex-start; gap:10px; font-size:14px; line-height:1.5; }
+.ha-product-features svg { color:#265df0; flex-shrink:0; margin-top:2px; }
+.ha-product-card > a { margin-top:auto; align-self:flex-start; }
+@media (max-width:760px) { .ha-product-cards { grid-template-columns:1fr; } .ha-product-card { padding:24px; } }
+@media (max-width:380px) { .ha-product-features { grid-template-columns:1fr; } }
