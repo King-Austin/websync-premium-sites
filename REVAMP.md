@@ -28,3 +28,9 @@ The second pass follows the reference composition and geometry: 1480px container
 The visual shell also covers About, Contact, Pricing, Work, the journal and article pages, the founder profile and existing legal pages. Added eight service-detail routes and a startups/product-build page. Existing policy and article body content is retained. The contact brief prepares a WhatsApp message for the visitor to review and send; it does not pretend to store an enquiry. No newsletter subscription or Happidev-specific guarantees are represented as WebSync services.
 
 Alignment validation: production build passed; all 19 marketing/service route checks and representative font/project asset checks returned HTTP 200 locally. Automated component tests cover service tabs and keyboard navigation, FAQ filtering, all 19 client domains and category filtering, mobile menu state, WhatsApp brief preparation and email copying. A full deployed browser comparison remains blocked by Vercel sign-in; automatic approval review rejected creating a shareable bypass link. Preview protection is retained.
+
+## Homepage expansion
+
+The footer wordmark now uses solid WebSync blue, and the hero has visible blue grid lines. The homepage includes both founder profiles, subscription/custom pricing with a link to the full pricing page, and a CAC registration section with an expandable view of the existing redacted certificate. The CAC asset is explicitly included in the deployment file trace and loaded directly in the browser to preserve the existing referrer protection.
+
+The user-reported total is presented as **30+ clients served**, separately from the **19 selected projects** in the portfolio. No additional domains or unsupported customer testimonials were invented. Production build (44 generated routes) and the six existing interaction tests passed. Deployed visual review remains blocked by Vercel Authentication.

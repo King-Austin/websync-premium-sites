@@ -5,6 +5,8 @@ import Shell from "@/components/revamp/Shell";
 import HeroStage from "@/components/revamp/HeroStage";
 import ServiceTabs from "@/components/revamp/ServiceTabs";
 import Portfolio from "@/components/revamp/Portfolio";
+import Pricing from "@/components/revamp/Pricing";
+import CompanySections from "@/components/revamp/CompanySections";
 import FAQ from "@/components/revamp/FAQ";
 import {
   Heading,
@@ -18,7 +20,7 @@ import {
 export const metadata: Metadata = {
   title: "WebSync Digital | Websites & software for your business",
   description:
-    "Business websites, online stores and custom software. Explore 19 client projects and our website subscription.",
+    "Business websites, online stores and custom software. Explore 19 selected projects from our work with 30+ clients, meet our founders and see our website subscription.",
   alternates: { canonical: "/" },
 };
 export default function Home() {
@@ -61,6 +63,13 @@ export default function Home() {
           </div>
           <HeroStage />
         </div>
+        <div className="ws-container ha-client-proof">
+          <strong>30+</strong>
+          <span>clients served</span>
+          <i aria-hidden="true" />
+          <strong>19</strong>
+          <span>selected projects to explore</span>
+        </div>
         <ClientBands />
       </section>
       <section className="ws-section ws-container" id="services">
@@ -77,7 +86,7 @@ export default function Home() {
           <Heading
             label="SELECTED WORK"
             title="Real websites. Real clients. Live projects."
-            copy="Explore 19 client websites across commerce, energy, hospitality, business services and community."
+            copy="30+ clients served. These 19 selected projects showcase our work across commerce, energy, hospitality, business services and community."
           />
         </div>
         <Portfolio rail />
@@ -111,6 +120,20 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <section className="ws-section ws-container" id="pricing">
+        <Heading
+          label="PRICING"
+          title="A clear starting point. A plan for your business."
+          copy="Start with our website subscription, or agree a tailored quote for a bigger build."
+        />
+        <Pricing />
+        <div className="ha-section-link">
+          <Link href="/pricing" className="ws-button ws-button-outline">
+            Explore pricing & plan details <ArrowRight size={17} />
+          </Link>
+        </div>
+      </section>
+      <CompanySections />
       <Process />
       <Quality />
       <JournalBand />

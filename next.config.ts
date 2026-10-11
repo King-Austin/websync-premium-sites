@@ -39,6 +39,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  outputFileTracingIncludes: {
+    "/api/legal/cac": ["./src/legal-assets/cac.png"],
+  },
   productionBrowserSourceMaps: false,
 };
 
